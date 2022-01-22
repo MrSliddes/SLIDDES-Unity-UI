@@ -38,7 +38,6 @@ namespace SLIDDES.UI.MenuEditorVisualizer
             float height = rt.rect.height;
             for(int i = 0; i < menus.Length; i++)
             {
-                print(rt.rect.height);
                 menus[i].SetRect(i * height, i * -height, 0, 0);
             }
 
