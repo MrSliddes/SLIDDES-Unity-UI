@@ -1,0 +1,18 @@
+{
+  "name": "com.sliddes.ui",
+  "version": "1.0.0",
+  "displayName": "SLIDDES UI",
+  "description": "Everything you need for UI",
+  "keywords": [
+    "sliddes",
+    "mrsliddes",
+    "ui",
+    "gui"
+  ],
+  "author": {
+    "name": "SLIDDES",
+    "email": "support@sliddes.com",
+    "url": "https://www.sliddes.com"
+  },
+  "type": "library"
+}
