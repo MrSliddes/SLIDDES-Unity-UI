@@ -50,6 +50,18 @@ namespace SLIDDES.UI.Navigator
             Instance.currentMenu.Open();
         }
 
+        public static void Open(int menuIndex)
+        {
+            // Check if index isnt out of range
+            if(menuIndex < 0 || menuIndex >= Instance.menus.Length)
+            {
+                Debug.LogError("[UINavigator] Open(menuIndex) is out of range! Got index: " + menuIndex);
+                return;
+            }
+            // Open Menu
+            Open(Instance.menus[menuIndex]);
+        }
+
         /// <summary>
         /// The same as the static function Open() but usable for example button.onClick()
         /// </summary>
