@@ -71,7 +71,8 @@ namespace SLIDDES.UI.MenuEditorVisualizer
                 rt = GetComponent<RectTransform>();
                 menus = new RectTransform[transform.childCount];
                 int i = 0;
-                foreach(RectTransform child in transform)
+                RectTransform[] rectTransforms = GetComponentsInChildren<RectTransform>();
+                foreach(RectTransform child in rectTransforms)
                 {
                     if(child.name.ToLower().Contains("[menu]"))
                     {
