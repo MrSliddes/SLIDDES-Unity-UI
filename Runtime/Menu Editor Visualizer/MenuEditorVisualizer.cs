@@ -70,11 +70,12 @@ namespace SLIDDES.UI.MenuEditorVisualizer
             {
                 rt = GetComponent<RectTransform>();
                 menus.Clear();
-                foreach(RectTransform child in rt)
+                foreach(Transform child in rt)
                 {
+                    if(child.GetComponent<RectTransform>() == null) continue;
                     if(child.name.ToLower().Contains("[menu]"))
                     {
-                        menus.Add(child);
+                        menus.Add(child.GetComponent<RectTransform>());
                     }
                 }
             }
