@@ -16,7 +16,7 @@ namespace SLIDDES.UI.MenuEditorVisualizer
         /// <summary>
         /// The recttransforms of all menus
         /// </summary>
-        [SerializeField] private RectTransform[] menus;
+        [SerializeField] private List<RectTransform> menus;
 
         private void Awake()
         {
@@ -36,12 +36,12 @@ namespace SLIDDES.UI.MenuEditorVisualizer
             SetupRectTransforms();
 #endif
             float height = rt.rect.height;
-            for(int i = 0; i < menus.Length; i++)
+            for(int i = 0; i < menus.Count; i++)
             {
                 menus[i].SetRect(i * height, i * -height, 0, 0);
             }
 
-            Debug.Log(string.Format("[Menu Editor Visualizer] Organised {0} Menus.", menus.Length));
+            Debug.Log(string.Format("[Menu Editor Visualizer] Organised {0} Menus.", menus.Count));
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace SLIDDES.UI.MenuEditorVisualizer
 #if UNITY_EDITOR
             SetupRectTransforms();
 #endif
-            for(int i = 0; i < menus.Length; i++)
+            for(int i = 0; i < menus.Count; i++)
             {
                 menus[i].SetRect(0, 0, 0, 0);
             }
@@ -69,19 +69,14 @@ namespace SLIDDES.UI.MenuEditorVisualizer
             else
             {
                 rt = GetComponent<RectTransform>();
-                menus = new RectTransform[transform.childCount];
-                int i = 0;
-                RectTransform[] rectTransforms = GetComponentsInChildren<RectTransform>();
-                foreach(RectTransform child in rectTransforms)
+                menus.Clear();
+                foreach(RectTransform child in rt)
                 {
                     if(child.name.ToLower().Contains("[menu]"))
                     {
-                        menus[i] = child;
-                        i++;
+                        menus.Add(child);
                     }
                 }
-                print(i);
-                System.Array.Resize(ref menus, i);
             }
 
             Debug.Log("[Menu Editor Visualizer] Setup RT.");
