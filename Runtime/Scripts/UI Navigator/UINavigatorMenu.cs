@@ -12,6 +12,8 @@ namespace SLIDDES.UI.Navigator
     [AddComponentMenu("SLIDDES/UI/UI Navigator Menu")]
     public class UINavigatorMenu : MonoBehaviour
     {
+        [Tooltip("Dont close the menu on start")]
+        [SerializeField] private bool dontCloseOnStart;
         [Tooltip("Include the gameobject where the UINavigatorMenu is attached too to be turned on/off")]
         [SerializeField] private bool includeSelf;
         [Tooltip("The elements of the menu to toggle")]
@@ -26,6 +28,11 @@ namespace SLIDDES.UI.Navigator
         public UINavigatorMenu[] menusToOpen;
         [Tooltip("Extra menus to close when this menu opens (and open when this menu closes")]
         public UINavigatorMenu[] menusToClose;
+
+        private void Start()
+        {
+            if(!dontCloseOnStart) Close();
+        }
 
         /// <summary>
         /// Open the menu
