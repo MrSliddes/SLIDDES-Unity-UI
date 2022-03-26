@@ -8,6 +8,7 @@ namespace SLIDDES.UI.MenuEditorVisualizer
     /// <summary>
     /// A class that organises menus to easily edit them while in editor
     /// </summary>
+    [AddComponentMenu("SLIDDES/UI/Menu Editor Visualizer")]
     public class MenuEditorVisualizer : MonoBehaviour
     {
         public bool useCustomRectTransforms = false;
@@ -16,7 +17,7 @@ namespace SLIDDES.UI.MenuEditorVisualizer
         /// <summary>
         /// The recttransforms of all menus
         /// </summary>
-        [SerializeField] private List<RectTransform> menus;
+        [SerializeField] private List<RectTransform> menus = new List<RectTransform>();
 
         private void Awake()
         {

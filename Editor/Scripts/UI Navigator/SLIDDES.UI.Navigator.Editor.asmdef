@@ -1,0 +1,14 @@
+{
+    "name": "SLIDDES.UI.Navigator.Editor",
+    "rootNamespace": "SLIDDES.UI.Navigator.Editor",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

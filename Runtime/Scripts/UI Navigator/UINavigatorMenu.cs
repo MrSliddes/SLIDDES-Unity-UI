@@ -5,7 +5,11 @@ using UnityEngine.Events;
 
 namespace SLIDDES.UI.Navigator
 {
+    /// <summary>
+    /// A menu for UI navigator
+    /// </summary>
     [System.Serializable]
+    [AddComponentMenu("SLIDDES/UI/UI Navigator Menu")]
     public class UINavigatorMenu : MonoBehaviour
     {
         [Tooltip("Include the gameobject where the UINavigatorMenu is attached too to be turned on/off")]
@@ -23,6 +27,9 @@ namespace SLIDDES.UI.Navigator
         [Tooltip("Extra menus to close when this menu opens (and open when this menu closes")]
         public UINavigatorMenu[] menusToClose;
 
+        /// <summary>
+        /// Open the menu
+        /// </summary>
         public void Open()
         {
             if(includeSelf) gameObject.SetActive(true);
@@ -45,6 +52,9 @@ namespace SLIDDES.UI.Navigator
             onMenuOpen?.Invoke();
         }
 
+        /// <summary>
+        /// Close the menu
+        /// </summary>
         public void Close()
         {
             if(includeSelf) gameObject.SetActive(false);

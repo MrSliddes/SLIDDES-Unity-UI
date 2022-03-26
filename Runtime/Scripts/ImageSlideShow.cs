@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 namespace SLIDDES.UI
 {
+    /// <summary>
+    /// For creating a image slide show
+    /// </summary>
+    [AddComponentMenu("SLIDDES/UI/Image Slide Show")]
     public class ImageSlideShow : MonoBehaviour
     {
         [SerializeField] private float imageStayDuration = 5f;
