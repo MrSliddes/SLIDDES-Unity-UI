@@ -23,7 +23,11 @@ namespace SLIDDES.UI.Navigator
         // Start is called before the first frame update
         void Start()
         {
-            if(openingsMenu != null) Open(openingsMenu);
+            if(openingsMenu != null)
+            {
+                openingsMenu.dontCloseOnStart = true;
+                Open(openingsMenu);
+            }
         }
 
         /// <summary>
