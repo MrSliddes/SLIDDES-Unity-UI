@@ -2,7 +2,9 @@
     "name": "SLIDDES.UI.Navigator.Editor",
     "rootNamespace": "SLIDDES.UI.Navigator.Editor",
     "references": [],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
