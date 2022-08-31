@@ -47,7 +47,7 @@ namespace SLIDDES.UI.MenuEditorVisualizer
                 menus[i].SetRect(i * height, i * -height, 0, 0);
             }
 
-            Debug.Log(string.Format("[Menu Editor Visualizer] Organised {0} Menus.", menus.Count));
+            if(logDebugs) Debug.Log(string.Format("[Menu Editor Visualizer] Organised {0} Menus.", menus.Count));
         }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace SLIDDES.UI.MenuEditorVisualizer
                 menus[i].SetRect(0, 0, 0, 0);
             }
 
-            Debug.Log("[Menu Editor Visualizer] Resetted Menus.");
+            if(logDebugs) Debug.Log("[Menu Editor Visualizer] Resetted Menus.");
         }
 
         private void SetupRectTransforms()
@@ -86,7 +86,7 @@ namespace SLIDDES.UI.MenuEditorVisualizer
                 }
             }
 
-            Debug.Log("[Menu Editor Visualizer] Setup RT.");
+            if(logDebugs) Debug.Log("[Menu Editor Visualizer] Setup RT.");
         }
     }
 }
