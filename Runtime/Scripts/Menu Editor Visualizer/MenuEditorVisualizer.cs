@@ -11,7 +11,12 @@ namespace SLIDDES.UI.MenuEditorVisualizer
     [AddComponentMenu("SLIDDES/UI/Menu Editor Visualizer")]
     public class MenuEditorVisualizer : MonoBehaviour
     {
+        [Tooltip("Instead of text based use designated rect transforms")]
         public bool useCustomRectTransforms = false;
+        [Tooltip("Should this component debug log be logged to the console?")]
+        public bool logDebugs = false;
+        [Tooltip("The menu prefix string used to detect the menus (not uppercase sensitive)")]
+        public string menuPrefix = "[menu]";
 
         [SerializeField] private RectTransform rt;
         /// <summary>
@@ -74,7 +79,7 @@ namespace SLIDDES.UI.MenuEditorVisualizer
                 foreach(Transform child in rt)
                 {
                     if(child.GetComponent<RectTransform>() == null) continue;
-                    if(child.name.ToLower().Contains("[menu]"))
+                    if(child.name.ToLower().Contains(menuPrefix))
                     {
                         menus.Add(child.GetComponent<RectTransform>());
                     }

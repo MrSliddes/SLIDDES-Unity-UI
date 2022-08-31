@@ -25,7 +25,6 @@ namespace SLIDDES.UI.Navigator
         {
             if(openingsMenu != null)
             {
-                openingsMenu.dontCloseOnStart = true;
                 Open(openingsMenu);
             }
         }

@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [1.6.0] - 2022-08-31
+### Added
+- ScrollRectLinker
+### Changed
+- UINavigatorMenu, now has beginStartMethod instead of a single bool to close on start
+- MenuEditorVisualizer, cleaned up inspector UI
+
 ## [1.5.1] - 2022-04-02
 ### Fixed
 - Asmdef wrong configuration with editor
