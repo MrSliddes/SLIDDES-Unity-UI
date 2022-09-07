@@ -10,16 +10,16 @@ namespace SLIDDES.UI.Navigator
     /// </summary>
     public static class HierarchyCreate
     {
-        [MenuItem("SLIDDES/UI/UI Navigator")]
-        [MenuItem("GameObject/UI/SLIDDES/UI Navigator", priority = 10)]
+        //[MenuItem("SLIDDES/UI/UI Navigator")]
+        [MenuItem("GameObject/UI/SLIDDES/UI Navigator", priority = 1)]
         private static void CreateUINavigator()
         {
             GameObject a = (GameObject)PrefabUtility.InstantiatePrefab(Resources.Load("[UI Navigator]"));
             PrefabUtility.UnpackPrefabInstance(a, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
         }
 
-        [MenuItem("SLIDDES/UI/UI Navigator Menu")]
-        [MenuItem("GameObject/UI/SLIDDES/UI Navigator Menu", priority = 10)]
+        //[MenuItem("SLIDDES/UI/UI Navigator Menu")]
+        [MenuItem("GameObject/UI/SLIDDES/UI Navigator Menu", priority = 1)]
         private static void CreateUINavigatorMenu()
         {
             Transform parentCanvas = GameObject.FindObjectOfType<Canvas>().transform;
