@@ -28,15 +28,18 @@ namespace SLIDDES.UI.MenuEditorVisualizer
             }
             GUILayout.EndHorizontal();
 
-            selected.logDebugs = GUILayout.Toggle(selected.logDebugs, new GUIContent("Log Debugs", "Log the debug.logs of this script to the console"));
-            selected.useCustomRectTransforms = GUILayout.Toggle(selected.useCustomRectTransforms, new GUIContent("Use Custom Rect Transforms", "Do you want to set your own RectTransforms instead of the script auto assigning them?"));
+            EditorGUILayout.Space();
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("logDebugs"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("useCustomRectTransforms"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("menuPrefix"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("subMenuPrefix"));
+
             if(selected.useCustomRectTransforms)
             {
-                SerializedObject so = new SerializedObject(selected);
-                SerializedProperty sp = so.FindProperty("menus");
-                EditorGUILayout.PropertyField(sp, true);
-                so.ApplyModifiedProperties();
+                EditorGUILayout.PropertyField(serializedObject.FindProperty("menus"), true);             
             }
+
+            serializedObject.ApplyModifiedProperties();
         }
     }
 }

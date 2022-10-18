@@ -16,21 +16,23 @@ namespace SLIDDES.UI.MenuEditorVisualizer
         [Tooltip("Should this component debug log be logged to the console?")]
         public bool logDebugs = false;
         [Tooltip("The menu prefix string used to detect the menus (not uppercase sensitive)")]
-        public string menuPrefix = "[menu]";
+        public string menuPrefix = "[Menu]";
+        [Tooltip("The menu prefix string used to detect the sub-menus (not uppercase sensitive)")]
+        public string subMenuPrefix = "[SubMenu]";
 
-        [SerializeField] private RectTransform rt;
+        /// <summary>
+        /// This rect transform
+        /// </summary>
+        public RectTransform rt;
         /// <summary>
         /// The recttransforms of all menus
         /// </summary>
-        [SerializeField] private List<RectTransform> menus = new List<RectTransform>();
+        public List<Menu> menus = new List<Menu>();
 
         private void Awake()
         {
-            SetupRectTransforms();
-            if(Application.isPlaying)
-            {
-                ResetMenus();
-            }
+            GetMenus();
+            ResetMenus();
         }
 
         /// <summary>
@@ -39,12 +41,19 @@ namespace SLIDDES.UI.MenuEditorVisualizer
         public void OrganiseMenus()
         {
 #if UNITY_EDITOR
-            SetupRectTransforms();
+            GetMenus();
 #endif
             float height = rt.rect.height;
             for(int i = 0; i < menus.Count; i++)
             {
-                menus[i].SetRect(i * height, i * -height, 0, 0);
+                // Set menu recttransform (place vertical)
+                menus[i].rectTransform.SetRect(i * height, i * -height, 0, 0);
+                // Set submenu recttransform (place horizontal right)
+                for(int j = 0; j < menus[i].subMenus.Count; j++)
+                {
+                    float width = menus[i].rectTransform.rect.width;
+                    menus[i].subMenus[j].SetRect(0, 0, (j + 1) * width, (j + 1) * -width);
+                }
             }
 
             if(logDebugs) Debug.Log(string.Format("[Menu Editor Visualizer] Organised {0} Menus.", menus.Count));
@@ -56,17 +65,24 @@ namespace SLIDDES.UI.MenuEditorVisualizer
         public void ResetMenus()
         {
 #if UNITY_EDITOR
-            SetupRectTransforms();
+            GetMenus();
 #endif
-            for(int i = 0; i < menus.Count; i++)
+            foreach(var item in menus)
             {
-                menus[i].SetRect(0, 0, 0, 0);
+                item.rectTransform.SetRect(0, 0, 0, 0);
+                foreach(var subMenu in item.subMenus)
+                {
+                    subMenu.SetRect(0, 0, 0, 0);
+                }
             }
 
             if(logDebugs) Debug.Log("[Menu Editor Visualizer] Resetted Menus.");
         }
 
-        private void SetupRectTransforms()
+        /// <summary>
+        /// Get all the menu/sub-menus
+        /// </summary>
+        private void GetMenus()
         {
             if(useCustomRectTransforms)
             {
@@ -76,17 +92,39 @@ namespace SLIDDES.UI.MenuEditorVisualizer
             {
                 rt = GetComponent<RectTransform>();
                 menus.Clear();
-                foreach(Transform child in rt)
+                foreach(Transform item in rt)
                 {
-                    if(child.GetComponent<RectTransform>() == null) continue;
-                    if(child.name.ToLower().Contains(menuPrefix))
+                    if(item.name.ToLower().Contains(menuPrefix.ToLower()))
                     {
-                        menus.Add(child.GetComponent<RectTransform>());
+                        Menu menu = new Menu(item.GetComponent<RectTransform>());
+                        menus.Add(menu);
+                        // Get sub menus
+                        foreach(Transform menuChild in item)
+                        {
+                            if(menuChild.name.ToLower().Contains(subMenuPrefix.ToLower()))
+                            {
+                                menus[menus.IndexOf(menu)].subMenus.Add(menuChild.GetComponent<RectTransform>());
+                            }
+                        }
                     }
                 }
             }
 
             if(logDebugs) Debug.Log("[Menu Editor Visualizer] Setup RT.");
+        }
+
+        [System.Serializable]
+        public class Menu
+        {
+            [Tooltip("The rect transform of the menu")]
+            public RectTransform rectTransform;
+            [Tooltip("The rect transforms of the menu sub-menus")]
+            public List<RectTransform> subMenus = new List<RectTransform>();
+
+            public Menu(RectTransform rectTransform)
+            {
+                this.rectTransform = rectTransform;
+            }
         }
     }
 }

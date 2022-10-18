@@ -3,8 +3,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [1.7.0] - 2022-10-18
+### Added
+- ScreenSafeArea.cs
+- ContentSizeFitterRefresh.cs
+- ReorderableUnityEventDrawer.cs
+- RectTransformExtensions.cs new methods
+
+### Changed
+- Moved SLIDDES.UI.asmdef to scripts folder
+- MenuEditorVisualizer.cs, now supports sub-menus, custom menu prefixes & updated inspector look
+
 ## [1.6.1] - 2022-09-07
-## Removed
+### Removed
 - SLIDDES top toolbar dropdown from unity removed
 
 ## [1.6.0] - 2022-08-31
