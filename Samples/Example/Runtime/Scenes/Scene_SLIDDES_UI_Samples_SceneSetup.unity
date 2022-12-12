@@ -220,7 +220,7 @@ RectTransform:
   - {fileID: 3471021081824224054}
   - {fileID: 1484098152}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -316,7 +316,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &383296245
 GameObject:
@@ -351,7 +351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2041.2921, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &577829706
@@ -398,7 +398,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &665284988
 GameObject:
@@ -576,7 +576,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1484098151
 GameObject:
@@ -614,38 +614,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1586184851669969717
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1586184851669969718}
-  - component: {fileID: 5640247023215276834}
-  m_Layer: 0
-  m_Name: '[UI Navigator]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1586184851669969718
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586184851669969717}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2338022191320393117
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,18 +660,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2338022191320393117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de6bcf96a73132f4cbe7cc6750fbabc0, type: 3}
+  m_Script: {fileID: 11500000, guid: 97e81137bbf58df4b972a1f535f6c71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beginClosingMethod: 0
+  initializationMode: 0
   includeClosingSelf: 0
-  elementsToToggle: []
-  menusToOpen: []
-  menusToClose: []
   onMenuOpen:
     m_PersistentCalls:
       m_Calls: []
   onMenuClose:
+    m_PersistentCalls:
+      m_Calls: []
+  onMenuToggle:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3471021081824224053
@@ -715,7 +683,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3471021081824224054}
-  - component: {fileID: 3471021081824224055}
   m_Layer: 5
   m_Name: '[Menu] Navigator Menu'
   m_TagString: Untagged
@@ -741,42 +708,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -1015.82715}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3471021081824224055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3471021081824224053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de6bcf96a73132f4cbe7cc6750fbabc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beginClosingMethod: 0
-  includeClosingSelf: 0
-  elementsToToggle: []
-  menusToOpen: []
-  menusToClose: []
-  onMenuOpen:
-    m_PersistentCalls:
-      m_Calls: []
-  onMenuClose:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &5640247023215276834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586184851669969717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eebb080909711843a39d537b1eb1f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openingsMenu: {fileID: 0}
