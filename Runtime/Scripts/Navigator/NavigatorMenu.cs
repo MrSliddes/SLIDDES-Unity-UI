@@ -14,8 +14,9 @@ namespace SLIDDES.UI.Navigator
     {
         [Tooltip("The way this menu closes on application start")]
         [SerializeField] public InitializationMode initializationMode;
-        [Tooltip("Include the gameobject where the UINavigatorMenu is attached too to be turned on/off")]
-        [SerializeField] private bool includeClosingSelf;
+
+        [Tooltip("If set true, the first index children get setActive(menu on/off)")]
+        [SerializeField] private bool toggleChildren = true;
 
         [Header("Callbacks")]
         public UnityEvent onMenuOpen;
@@ -49,8 +50,7 @@ namespace SLIDDES.UI.Navigator
             }
 
             doClosingMethod = false;
-            if(includeClosingSelf) gameObject.SetActive(true);
-            onMenuToggle?.Invoke(true);
+            Toggle(true);
             onMenuOpen?.Invoke();
         }
 
@@ -67,19 +67,25 @@ namespace SLIDDES.UI.Navigator
             }
 
             doClosingMethod = false;
-            if(includeClosingSelf) gameObject.SetActive(false);
-            onMenuToggle?.Invoke(false);
+            Toggle(false);
             onMenuClose?.Invoke();
         }
 
         /// <summary>
-        /// Only Closes all own menu elements
+        /// Toggle the menu
         /// </summary>
-        public void CloseSelf(bool invokeOnMenuClose = false)
+        /// <param name="setActive">Should the menu be set active or not?</param>
+        private void Toggle(bool setActive)
         {
-            if(includeClosingSelf) gameObject.SetActive(false);
+            if(toggleChildren)
+            {
+                foreach(Transform child in transform)
+                {
+                    child.gameObject.SetActive(setActive);
+                }
+            }
 
-            if(invokeOnMenuClose) onMenuClose?.Invoke();
+            onMenuToggle?.Invoke(setActive);
         }
 
         /// <summary>
