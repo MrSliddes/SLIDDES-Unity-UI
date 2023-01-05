@@ -23,12 +23,11 @@ namespace SLIDDES.UI.Navigator
             base.Open();
         }
 
-        public override void Close() 
+        public override void Close()
         {
             if(NavigatorManager.CurrentMenu == this)
             {
-                NavigatorManager.Close();
-                return;
+                NavigatorManager.Instance.currentMenu = null;
             }
 
             base.Close();

@@ -47,7 +47,7 @@ namespace SLIDDES.UI.Navigator
         public static void Open(NavigatorMenu newMenu)
         {
             // First close previous menu
-            Instance.currentMenu?.Close();
+            if(CurrentMenu != null) CurrentMenu.Close();
 
             // Set new menu
             Instance.currentMenu = newMenu;
