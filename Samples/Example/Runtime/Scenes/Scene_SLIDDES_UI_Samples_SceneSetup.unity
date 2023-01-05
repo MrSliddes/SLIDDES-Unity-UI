@@ -327,6 +327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 383296246}
+  - component: {fileID: 383296247}
   m_Layer: 5
   m_Name: '[SubMenu]'
   m_TagString: Untagged
@@ -354,6 +355,29 @@ RectTransform:
   m_AnchoredPosition: {x: 2041.2921, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &383296247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383296245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16229e477e6bd7e478f14881c6eec722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  toggleChildren: 1
+  onMenuOpen:
+    m_PersistentCalls:
+      m_Calls: []
+  onMenuClose:
+    m_PersistentCalls:
+      m_Calls: []
+  onMenuToggle:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &577829706
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,7 +688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initializationMode: 0
-  includeClosingSelf: 0
+  toggleChildren: 1
   onMenuOpen:
     m_PersistentCalls:
       m_Calls: []
