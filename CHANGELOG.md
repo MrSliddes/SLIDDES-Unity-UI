@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [1.10.0] - 2023-01-23
+### Added
+- UI Rendering scripts for rendering over camera
+
 ## [1.9.0] - 2023-01-05
 ### Added
 - Devided NavigatorMenu into base class Navigator with NagivatorMenu.cs & NavigatorSubMenu
