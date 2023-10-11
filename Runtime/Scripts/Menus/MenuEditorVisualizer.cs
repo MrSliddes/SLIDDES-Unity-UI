@@ -8,17 +8,15 @@ namespace SLIDDES.UI.MenuEditorVisualizer
     /// <summary>
     /// A class that organises menus to easily edit them while in editor
     /// </summary>
-    [AddComponentMenu("SLIDDES/UI/Menu Editor Visualizer")]
+    [AddComponentMenu("SLIDDES/UI/Menus/Menu Editor Visualizer")]
     public class MenuEditorVisualizer : MonoBehaviour
     {
         [Tooltip("Instead of text based use designated rect transforms")]
         public bool useCustomRectTransforms = false;
         [Tooltip("Should this component debug log be logged to the console?")]
-        public bool logDebugs = false;
+        public bool debug = false;
         [Tooltip("The menu prefix string used to detect the menus (not uppercase sensitive)")]
         public string menuPrefix = "[Menu]";
-        [Tooltip("The menu prefix string used to detect the sub-menus (not uppercase sensitive)")]
-        public string subMenuPrefix = "[SubMenu]";
 
         /// <summary>
         /// This rect transform
@@ -28,6 +26,8 @@ namespace SLIDDES.UI.MenuEditorVisualizer
         /// The recttransforms of all menus
         /// </summary>
         public List<Menu> menus = new List<Menu>();
+
+        private Vector2Int nextMenuIndexing = Vector2Int.zero;
 
         private void Awake()
         {
@@ -43,20 +43,22 @@ namespace SLIDDES.UI.MenuEditorVisualizer
 #if UNITY_EDITOR
             GetMenus();
 #endif
-            float height = rt.rect.height;
+            Vector2 size = rt.rect.size;
+
+            // Loop through all menus
             for(int i = 0; i < menus.Count; i++)
             {
-                // Set menu recttransform (place vertical)
-                menus[i].rectTransform.SetRect(i * height, i * -height, 0, 0);
-                // Set submenu recttransform (place horizontal right)
-                for(int j = 0; j < menus[i].subMenus.Count; j++)
-                {
-                    float width = menus[i].rectTransform.rect.width;
-                    menus[i].subMenus[j].SetRect(0, 0, (j + 1) * width, (j + 1) * -width);
-                }
+                // Get local indexing
+                Vector2Int indexing = menus[i].index - menus[i].parentIndex;
+
+                // Set position and size
+                menus[i].rectTransform.SetRect(
+                    (indexing.y * size.y) , (indexing.y * -size.y) ,
+                    (indexing.x * size.x) , (indexing.x * -size.x) );
             }
 
-            if(logDebugs) Debug.Log(string.Format("[Menu Editor Visualizer] Organised {0} Menus.", menus.Count));
+            if(debug) Debug.Log($"[Menu Editor Visualizer] Organised {menus.Count}");
+
         }
 
         /// <summary>
@@ -70,13 +72,9 @@ namespace SLIDDES.UI.MenuEditorVisualizer
             foreach(var item in menus)
             {
                 item.rectTransform.SetRect(0, 0, 0, 0);
-                foreach(var subMenu in item.subMenus)
-                {
-                    subMenu.SetRect(0, 0, 0, 0);
-                }
             }
 
-            if(logDebugs) Debug.Log("[Menu Editor Visualizer] Resetted Menus.");
+            if(debug) Debug.Log("[Menu Editor Visualizer] Resetted Menus.");
         }
 
         /// <summary>
@@ -92,25 +90,34 @@ namespace SLIDDES.UI.MenuEditorVisualizer
             {
                 rt = GetComponent<RectTransform>();
                 menus.Clear();
-                foreach(Transform item in rt)
-                {
-                    if(item.name.ToLower().Contains(menuPrefix.ToLower()))
-                    {
-                        Menu menu = new Menu(item.GetComponent<RectTransform>());
-                        menus.Add(menu);
-                        // Get sub menus
-                        foreach(Transform menuChild in item)
-                        {
-                            if(menuChild.name.ToLower().Contains(subMenuPrefix.ToLower()))
-                            {
-                                menus[menus.IndexOf(menu)].subMenus.Add(menuChild.GetComponent<RectTransform>());
-                            }
-                        }
-                    }
-                }
+                nextMenuIndexing = new Vector2Int(0, 0);
+
+                FindMenuRecursively(rt, nextMenuIndexing);
             }
 
-            if(logDebugs) Debug.Log("[Menu Editor Visualizer] Setup RT.");
+            if(debug) Debug.Log("[Menu Editor Visualizer] Setup RT.");
+        }
+             
+        /// <summary>
+        /// Find menus recursively in a rectTransform
+        /// </summary>
+        /// <param name="rectTransform"></param>
+        /// <param name="parentIndex"></param>
+        /// <param name="childIndex"></param>
+        /// <param name="y"></param>
+        private void FindMenuRecursively(RectTransform rectTransform, Vector2Int parentIndex, int y = 0)
+        {
+            foreach(Transform child in rectTransform)
+            {
+                if(child.name.Contains(menuPrefix))
+                {
+                    Vector2Int newIndex = new Vector2Int(nextMenuIndexing.x, y);
+                    menus.Add(new Menu(child.GetComponent<RectTransform>(), newIndex, parentIndex));
+                    nextMenuIndexing.x++;
+
+                    FindMenuRecursively(child.GetComponent<RectTransform>(), newIndex, y + 1);
+                }
+            }
         }
 
         [System.Serializable]
@@ -118,12 +125,17 @@ namespace SLIDDES.UI.MenuEditorVisualizer
         {
             [Tooltip("The rect transform of the menu")]
             public RectTransform rectTransform;
-            [Tooltip("The rect transforms of the menu sub-menus")]
-            public List<RectTransform> subMenus = new List<RectTransform>();
 
-            public Menu(RectTransform rectTransform)
+            [Tooltip("The indexing of the menu used for organizing")]
+            public Vector2Int index;
+            [Tooltip("The index of the parent of this menu")]
+            public Vector2Int parentIndex;
+
+            public Menu(RectTransform rectTransform, Vector2Int index, Vector2Int parentIndex)
             {
                 this.rectTransform = rectTransform;
+                this.index = index;
+                this.parentIndex = parentIndex;
             }
         }
     }

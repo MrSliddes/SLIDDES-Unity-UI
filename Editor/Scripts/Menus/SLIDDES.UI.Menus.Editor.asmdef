@@ -1,6 +1,6 @@
 {
-    "name": "SLIDDES.UI.MenuEditorVisualizer.Editor",
-    "rootNamespace": "SLIDDES.UI.MenuEditorVisualizer.Editor",
+    "name": "SLIDDES.UI.Menus.Editor",
+    "rootNamespace": "SLIDDES.UI.Menus.Editor",
     "references": [
         "GUID:7bbbebea17d19fb439b61bb4c3e2c0e4"
     ],
