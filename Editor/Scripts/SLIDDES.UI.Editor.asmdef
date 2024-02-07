@@ -1,7 +1,10 @@
 {
     "name": "SLIDDES.UI.Editor",
     "rootNamespace": "SLIDDES.UI.Editor",
-    "references": [],
+    "references": [
+        "GUID:4d7cc27440a06394680b969d28021356",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
     "includePlatforms": [
         "Editor"
     ],
