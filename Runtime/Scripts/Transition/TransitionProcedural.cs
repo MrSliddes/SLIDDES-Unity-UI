@@ -22,6 +22,14 @@ namespace SLIDDES.UI
         }
 
         [SerializeField] private Graphic targetGraphic;
+        [SerializeField] private Transform siblingTransform;
+
+        [Header("OnEnable")]
+        [SerializeField] private float timeOnEnable = 0.25f;
+        [SerializeField] private bool onEnableDelayBySiblingIndex;
+        [SerializeField] private Vector3 onEnableLocalPosition;
+        [SerializeField] private Vector3 onEnableLocalEulerRotation;
+        [SerializeField] private Vector3 onEnableLocalScale = Vector3.one;
 
         [Header("Select")]
         [SerializeField] private float timeToSelect = 0.1f;
@@ -56,6 +64,39 @@ namespace SLIDDES.UI
         private Vector3 interruptedLocalEulerRotation;
         private Vector3 interruptedLocalScale;
 
+        public override void Initialize(MonoBehaviour monoBehaviour, params object[] objects)
+        {
+            base.Initialize(monoBehaviour, objects);
+            if(siblingTransform == null) siblingTransform = monoBehaviour.transform;
+        }
+
+        protected override IEnumerator OnEnableAsync()
+        {
+            if(onEnableDelayBySiblingIndex)
+            {
+                int index = Mathf.Clamp(siblingTransform.GetSiblingIndex(), 1, 99);
+                yield return new WaitForSeconds(timeOnEnable * index);
+            }
+
+            while(transitionTimer < timeOnEnable)
+            {
+                float t = TransitionEasing.EaseOutCubic(transitionTimer / timeOnEnable);
+                targetGraphic.transform.localPosition = Vector3.Lerp(onEnableLocalPosition, deselectLocalPosition, t);
+                targetGraphic.transform.localRotation = Quaternion.Euler(Vector3.Lerp(onEnableLocalEulerRotation, deselectLocalEulerRotation, t));
+                targetGraphic.transform.localScale = Vector3.Lerp(onEnableLocalScale, deselectLocalScale, t);
+                transitionTimer += Time.unscaledDeltaTime;
+                yield return null;
+            }
+
+            // Done
+            // Deadset
+            targetGraphic.transform.localPosition = deselectLocalPosition;
+            targetGraphic.transform.localRotation = Quaternion.Euler(deselectLocalEulerRotation);
+            targetGraphic.transform.localScale = deselectLocalScale;
+
+            transitionTimer = 0;
+            yield break;
+        }
 
         protected override IEnumerator EnterAsync()
         {

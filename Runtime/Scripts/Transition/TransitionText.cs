@@ -27,7 +27,7 @@ namespace SLIDDES.UI
         public override void Initialize(MonoBehaviour monoBehaviour, params object[] objects)
         {
             base.Initialize(monoBehaviour, objects);
-            navigation = (Navigation)objects[0];
+            navigation = (Navigation)monoBehaviour;
 
             defaultText = textField.text;
             InteractableChanged(navigation.Interactable);

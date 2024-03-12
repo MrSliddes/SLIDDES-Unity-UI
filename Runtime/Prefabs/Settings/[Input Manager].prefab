@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3831970439328713187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3831970439328713185}
+  - component: {fileID: 3831970439328713184}
+  m_Layer: 0
+  m_Name: '[Input Manager]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3831970439328713185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831970439328713187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3831970439328713184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831970439328713187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9dc60a957e2e04a9117edfba7f5785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadAndSaveInput: 1
+  autoSwitchPlayerUIInputModule: 1
+  assignPlayerInputActionAsset: 0
+  inputActionAsset: {fileID: -944628639613478452, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
+  inputDeviceChangeMinTime: 0.5
+  lastPlayerInputPressChangeMinTime: 0.5
+  inputDeviceProfiles:
+  - label: Keyboard&Mouse
+    inputDeviceNames:
+    - Mouse:/Mouse
+    - Keyboard:/Keyboard
+    spriteAssetIndex: 0
+    spriteAssets:
+    - {fileID: 11400000, guid: 2d18ef08fce62f346b8fe1992d6a357b, type: 2}
+  - label: Xbox Controller
+    inputDeviceNames:
+    - XInputControllerWindows:/XInputControllerWindows
+    spriteAssetIndex: 0
+    spriteAssets:
+    - {fileID: 11400000, guid: 681cb7414747bc14b83f28348346b6ad, type: 2}
+  - label: Xbox One Controller
+    inputDeviceNames:
+    - XInputControllerWindows:/XInputControllerWindows1
+    spriteAssetIndex: 0
+    spriteAssets:
+    - {fileID: 11400000, guid: 681cb7414747bc14b83f28348346b6ad, type: 2}
+  - label: PS4 Controller
+    inputDeviceNames:
+    - DualShock4GamepadHID:/DualShock4GamepadHID
+    spriteAssetIndex: 0
+    spriteAssets:
+    - {fileID: 11400000, guid: 2c2c623005d58f843a67b9ea7f29a2d1, type: 2}
+  - label: PS5 Controller
+    inputDeviceNames:
+    - DualSenseGamepadHID:/DualSenseGamepadHID
+    spriteAssetIndex: 0
+    spriteAssets:
+    - {fileID: 11400000, guid: 153ab723fb455d943a74f07084558ab8, type: 2}
+  defaultSpriteAsset: {fileID: 11400000, guid: 681cb7414747bc14b83f28348346b6ad, type: 2}
+  showDebug: 1

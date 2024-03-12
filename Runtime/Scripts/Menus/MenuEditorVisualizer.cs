@@ -117,6 +117,10 @@ namespace SLIDDES.UI.MenuEditorVisualizer
 
                     FindMenuRecursively(child.GetComponent<RectTransform>(), newIndex, y + 1);
                 }
+                else
+                {
+                    FindMenuRecursively(child.GetComponent<RectTransform>(), parentIndex, y);
+                }
             }
         }
 

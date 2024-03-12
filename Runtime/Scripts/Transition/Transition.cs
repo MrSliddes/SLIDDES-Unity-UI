@@ -21,6 +21,24 @@ namespace SLIDDES.UI
             this.monoBehaviour = monoBehaviour;
         }
 
+        public virtual void OnEnable()
+        {
+            state = State.onEnable;
+            transitionTimer = 0;
+            if(coroutine != null) monoBehaviour.StopCoroutine(coroutine);
+            coroutine = monoBehaviour.StartCoroutine(OnEnableAsync());
+        }
+
+        protected virtual IEnumerator OnEnableAsync()
+        {
+            yield break;
+        }
+
+        public virtual void OnDisable()
+        {
+
+        }
+
         public virtual void Enter()
         {
             state = State.enter;
@@ -50,8 +68,11 @@ namespace SLIDDES.UI
         {
             state = State.exit;
             transitionTimer = 0;
-            if(coroutine != null) monoBehaviour.StopCoroutine(coroutine);
-            coroutine = monoBehaviour.StartCoroutine(ExitAsync());
+            if(monoBehaviour.isActiveAndEnabled)
+            {
+                if(coroutine != null) monoBehaviour.StopCoroutine(coroutine);
+                coroutine = monoBehaviour.StartCoroutine(ExitAsync());
+            }
         }
 
         protected virtual IEnumerator ExitAsync()
@@ -87,6 +108,7 @@ namespace SLIDDES.UI
 
         public enum State
         {
+            onEnable,
             enter,
             update,
             exit,
@@ -103,6 +125,8 @@ namespace SLIDDES.UI
             animation = 4,
             sprite = 8,
             text = 16,
+            rendering = 32,
+            audio = 64,
         }
     }
 }

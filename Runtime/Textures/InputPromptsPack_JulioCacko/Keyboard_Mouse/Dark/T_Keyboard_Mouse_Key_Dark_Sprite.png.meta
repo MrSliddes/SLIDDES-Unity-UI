@@ -1,0 +1,2493 @@
+fileFormatVersion: 2
+guid: d64f7ddfa278c834abff0bd05c1df7fc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2e45a29486c4b4c8984764b7a5339d
+      internalID: -2096407143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 475
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690895356a0208d4197498d90b4553cf
+      internalID: 214696581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 475
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7a024f436824d4ba87c492a1a7c69f
+      internalID: 1598005707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb3d8e3d00a73047a6c2f4fae3b9ced
+      internalID: -226115362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758d603ffb0942545b9c1816120a0dee
+      internalID: 809153180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 475
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4464b2b2dd96241b75f4f370565789
+      internalID: 1245142754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 475
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45fe878e14c17f4d8362867b07216e7
+      internalID: -1038521637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 475
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9d3840dce92b44382a55ed27b5e625
+      internalID: -163575844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 475
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c39b89aaf74e046a1d058b531d27b5
+      internalID: -1004792972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2584495c1d1a8746aa1332ad9eea28b
+      internalID: 338824915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 422
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3313d32678bbfc84ba0b9de5aae4ae53
+      internalID: -1555080811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 422
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ea0e55260995140836e62cef100080
+      internalID: 1541252255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 422
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69254ac60fafba46917bae0705a64ab
+      internalID: -792537955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 422
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe799d8efc493042ab6eb8739602043
+      internalID: -1710645375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 422
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd04312ab1dbed24fb4324f0218c11ee
+      internalID: -60758243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 422
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa08d35b80c00f429799fbf9f483cc4
+      internalID: 1051816315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 422
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62616fa9a26df342976cc82c316ad27
+      internalID: 2055630171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 422
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b904da6948a08a94faff8996b122416d
+      internalID: 767598187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 422
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edca5ef3bd64dd14fb1e678a9c41d366
+      internalID: 11070407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 422
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f41f03f2319a44ab24967ef5b273a6
+      internalID: 2084535383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 370
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98fccbdfe8645a4c81bbd5af84095ec
+      internalID: 791661322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 370
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0392ef8004d4544d99a9f1ad92c7fd6
+      internalID: -1454205792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 370
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38386c4dd2374a143be2ef662d110707
+      internalID: -1311718353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 370
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b188cc6ab45cd438d392048689c375
+      internalID: 2050110013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 370
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36d38699c5c0ca41baf752db579e6ab
+      internalID: -1846082259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 370
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e79d2708da67e448057fa9052a1cbf
+      internalID: 1632728549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_26
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 370
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35660c7c4f564e2449d086ec84a02a73
+      internalID: 209664799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_27
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 370
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a008a8ababfe98f4a9b31f5e9bc62ee3
+      internalID: -68557853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_28
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 370
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78dbdd449f96464583201ef4e8502ec
+      internalID: -1523370869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_29
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 370
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4da9a775ba57fe43b5ebaa0b9f65bbf
+      internalID: -1654479137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 318
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9477be9ef589a44bb451465411572c3
+      internalID: 1415311220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_31
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 318
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e657f8685b49ea1419c4212d8d3d4868
+      internalID: -886100218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_32
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 318
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bac4143eec06246a824f8c33307b0a
+      internalID: 1998961759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_33
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 318
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8cd03a54aa22b438c53d3cda1e55af
+      internalID: -356922077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_34
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 318
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe7db173b95a6d4a9dc525147f16a54
+      internalID: 542915258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_35
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 318
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ec8149a2d8869468c176024690aec8
+      internalID: -1835341086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_36
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 318
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22e399554430714bbc5d34bd7cb47a3
+      internalID: 767896876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_37
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 318
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b4b67cce05b5947bb6a2bd203b09ce
+      internalID: -124696097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_38
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 318
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9ea1f3d369bf741880f3b44720dcf2
+      internalID: -1452771420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_39
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 318
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6e54fbcbcc8ea429e475d013ea041f
+      internalID: 674102395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 266
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b93805fe5f93b47aeef20590a4914a
+      internalID: 1365891653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_41
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 266
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0bf42212044fd46b0f35a9c8ee6047
+      internalID: 203983879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_42
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 266
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aceec59ed8cd30409dc43a6b00effd5
+      internalID: -123801512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_43
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 265
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694e24654c450c54cba868e86e37c9e0
+      internalID: -2040561744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_44
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 266
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dbc5f6de28c664ba3182287a319f15
+      internalID: 595620862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_45
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 266
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f6bc9f9f73aff48a9781c86a2d6af0
+      internalID: 441498574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_46
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 266
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e5575d0e7771b48af7005b0a9b43fe
+      internalID: -1489739204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_47
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 266
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b9fcfde4540b440b2d42bacfce31e0
+      internalID: -464696003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_48
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 266
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d0a5497df65b649b4878a23ec978a5
+      internalID: -128473066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_49
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 266
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856f1d9e7366a7b4180c5e710c37fd64
+      internalID: -277436710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_50
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 212
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90733778a7d3b0d47acaeae33d3d2989
+      internalID: -1231644985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_51
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 212
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65537d7a7cff5894795dfc99ffe4f393
+      internalID: -1845617067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_52
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 212
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f649b664a8f74c4bba012215fd3d5e5
+      internalID: -1630577769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_53
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 212
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc005d020dfb5bb48b72948719e5d617
+      internalID: 683540818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_54
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 214
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca291d929661e954ba309e207010a572
+      internalID: -1640521803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_55
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 212
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799b4b7974f67634ab16d10dfb8291b1
+      internalID: 369527217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_56
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 212
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2bb0b098b4efe4e8aa2bd8690cfe37
+      internalID: -612146215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_57
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 212
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fed769e6aa5ab747ae5bcd6439f8041
+      internalID: -683438616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_58
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 217
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823d392f423da8b48bfbe7590139ff4a
+      internalID: -691247452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_59
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 214
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a160f1cad418e404f8a4c0656a866224
+      internalID: 548881994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_60
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 160
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66efc5aa4c254ec49a42c3f5f7b726f3
+      internalID: 756321072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_61
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 157
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b530c6d26aee9cf49b2e29cc790bcc93
+      internalID: 2128054331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_62
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 157
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6758359aa65c3e8479eb101fb7d6a4c3
+      internalID: 1750554380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_63
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 191
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9fa54efb644884590717d9c9c4dd74
+      internalID: 1671128678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_64
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 191
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af954f9dc8eb3a24cbeb357ed08acbbf
+      internalID: 423405279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_65
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 157
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55171fe95af241e4f8c6d65374459b15
+      internalID: 1152500648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_66
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 157
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeffdb3c12d20774eb96b724e200cc32
+      internalID: 1495859935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_67
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 157
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5bec0bd42325f4b87f25c55150985c
+      internalID: -282961789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_68
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 157
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27cb047260339044ea8c5a1b8cbfe8aa
+      internalID: 408926594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_69
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 157
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00c3f6138c0314488f92bf8508fb08b
+      internalID: -62341798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_70
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 172
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf8a3a13dcc9f545af0bf55a31e2f12
+      internalID: 1549931019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_71
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 172
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50105089b259ea4eb25ca7497a4b262
+      internalID: 515764516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_72
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 164
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5d1714164766e4381a40f46eb769eb
+      internalID: 2082281090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_73
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 172
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763469d0e3ee0d34bae393534449ab93
+      internalID: 1923016358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_74
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 164
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f0da14ad92cf34d837fd5ca74915d7
+      internalID: -12582749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_75
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 172
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2717fb0bb674f41aaf66f814e4f960
+      internalID: -126217564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_76
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 157
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df406ac9f82471242aa0dafb0b9d918c
+      internalID: -310515972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_77
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 157
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d201e32c1709aac4fb615492e2b9e980
+      internalID: 1422693653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_78
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 104
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7545c9716ac58a048885c2384fcfa10c
+      internalID: -1223870183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_79
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 106
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5e65725fc26b846a27a3a339d32a99
+      internalID: -1245329348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_80
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 106
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a274cdf7ccf23846ad3a43ea6662696
+      internalID: 2047735819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_81
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 106
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30e86eb272d31a47ab10752741d4b34
+      internalID: 1559682159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_82
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 104
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316e0c568ec44d8428fa49ca57fbc654
+      internalID: 1849999144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_83
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 104
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3afc1b59b3c6b149b1ff6a44c95f5ee
+      internalID: 243078316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_84
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 114
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba512a7c7fd3eb419ebd51e9801ff80
+      internalID: 1345776739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_85
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 112
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9424a9aeaed3f4a8026a5e732fc1b4
+      internalID: -1898204377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_86
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 112
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a25dbcec2d90574697cc3520dbf64dd
+      internalID: -1641939313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_87
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 112
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0c613f625f82f4591bf7c9a320f835
+      internalID: 74733602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_88
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 55
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51115270921dea4cbefa56029c543ee
+      internalID: -2021457822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_89
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 59
+        width: 37
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff98c3a68a6ce29419a552f56f3ce355
+      internalID: -130918592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_90
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 55
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7306fd823a55042845924f1b395928
+      internalID: 464703827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_91
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 55
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f8bc0647ad40a4bbced211b4871759
+      internalID: -944458941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_92
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 55
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1694d8d4cc6e2ee4fb1c69f3e94e91d6
+      internalID: 1706370676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_93
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 55
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b52ca4c2330a647aa2f6d965ee743a
+      internalID: 1539180469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_94
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 55
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54654e4cf9cccf448cf82f1f82e6d4a
+      internalID: -1242129051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_95
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 62
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689a37aed8a009042b1dd00c9f4e24a6
+      internalID: -38479064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_96
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 55
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefc1cd271a404242b011d849a753e5f
+      internalID: 2039852343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_97
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 55
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38eff84fcf93bb4e8ffba7e05bc708a
+      internalID: -1565136433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_98
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8990a34fc89e6ed49be66e52b21b4782
+      internalID: 966814418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_99
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 3
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba70afa0a2cdcd47a6a701bc5ee9219
+      internalID: -1437551054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_100
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 3
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf47146ff7f261a47a05f42cf1231b7b
+      internalID: -1221662097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_101
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 3
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d65116e5de0a44f9ed15de52ee08de
+      internalID: -1437157704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_102
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 7
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8a3f07b14a3c543b8c5e5c179cbac6
+      internalID: 286627234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_103
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 3
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282f9aba99f6d1441a699534a9e7e74e
+      internalID: 588671444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Keyboard_Mouse_Key_Dark_Sprite_104
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 7
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88e4e7918ee25c49ac4ef545e6418ae
+      internalID: 1210921503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      T_Keyboard_Mouse_Key_Dark_Sprite_5: 1245142754
+      T_Keyboard_Mouse_Key_Dark_Sprite_58: -691247452
+      T_Keyboard_Mouse_Key_Dark_Sprite_86: -1641939313
+      T_Keyboard_Mouse_Key_Dark_Sprite_89: -130918592
+      T_Keyboard_Mouse_Key_Dark_Sprite_99: -1437551054
+      T_Keyboard_Mouse_Key_Dark_Sprite_87: 74733602
+      T_Keyboard_Mouse_Key_Dark_Sprite_35: -1835341086
+      T_Keyboard_Mouse_Key_Dark_Sprite_8: -1004792972
+      T_Keyboard_Mouse_Key_Dark_Sprite_96: 2039852343
+      T_Keyboard_Mouse_Key_Dark_Sprite_66: 1495859935
+      T_Keyboard_Mouse_Key_Dark_Sprite_31: -886100218
+      T_Keyboard_Mouse_Key_Dark_Sprite_48: -128473066
+      T_Keyboard_Mouse_Key_Dark_Sprite_82: 1849999144
+      T_Keyboard_Mouse_Key_Dark_Sprite_97: -1565136433
+      T_Keyboard_Mouse_Key_Dark_Sprite_63: 1671128678
+      T_Keyboard_Mouse_Key_Dark_Sprite_18: 11070407
+      T_Keyboard_Mouse_Key_Dark_Sprite_6: -1038521637
+      T_Keyboard_Mouse_Key_Dark_Sprite_77: 1422693653
+      T_Keyboard_Mouse_Key_Dark_Sprite_64: 423405279
+      T_Keyboard_Mouse_Key_Dark_Sprite_49: -277436710
+      T_Keyboard_Mouse_Key_Dark_Sprite_24: -1846082259
+      T_Keyboard_Mouse_Key_Dark_Sprite_73: 1923016358
+      T_Keyboard_Mouse_Key_Dark_Sprite_4: 809153180
+      T_Keyboard_Mouse_Key_Dark_Sprite_94: -1242129051
+      T_Keyboard_Mouse_Key_Dark_Sprite_40: 1365891653
+      T_Keyboard_Mouse_Key_Dark_Sprite_20: 791661322
+      T_Keyboard_Mouse_Key_Dark_Sprite_34: 542915258
+      T_Keyboard_Mouse_Key_Dark_Sprite_47: -464696003
+      T_Keyboard_Mouse_Key_Dark_Sprite_36: 767896876
+      T_Keyboard_Mouse_Key_Dark_Sprite_1: 214696581
+      T_Keyboard_Mouse_Key_Dark_Sprite_0: -2096407143
+      T_Keyboard_Mouse_Key_Dark_Sprite_59: 548881994
+      T_Keyboard_Mouse_Key_Dark_Sprite_91: -944458941
+      T_Keyboard_Mouse_Key_Dark_Sprite_19: 2084535383
+      T_Keyboard_Mouse_Key_Dark_Sprite_23: 2050110013
+      T_Keyboard_Mouse_Key_Dark_Sprite_45: 441498574
+      T_Keyboard_Mouse_Key_Dark_Sprite_32: 1998961759
+      T_Keyboard_Mouse_Key_Dark_Sprite_51: -1845617067
+      T_Keyboard_Mouse_Key_Dark_Sprite_95: -38479064
+      T_Keyboard_Mouse_Key_Dark_Sprite_14: -60758243
+      T_Keyboard_Mouse_Key_Dark_Sprite_69: -62341798
+      T_Keyboard_Mouse_Key_Dark_Sprite_56: -612146215
+      T_Keyboard_Mouse_Key_Dark_Sprite_27: -68557853
+      T_Keyboard_Mouse_Key_Dark_Sprite_65: 1152500648
+      T_Keyboard_Mouse_Key_Dark_Sprite_103: 588671444
+      T_Keyboard_Mouse_Key_Dark_Sprite_37: -124696097
+      T_Keyboard_Mouse_Key_Dark_Sprite_62: 1750554380
+      T_Keyboard_Mouse_Key_Dark_Sprite_79: -1245329348
+      T_Keyboard_Mouse_Key_Dark_Sprite_25: 1632728549
+      T_Keyboard_Mouse_Key_Dark_Sprite_3: -226115362
+      T_Keyboard_Mouse_Key_Dark_Sprite_10: -1555080811
+      T_Keyboard_Mouse_Key_Dark_Sprite_38: -1452771420
+      T_Keyboard_Mouse_Key_Dark_Sprite_43: -2040561744
+      T_Keyboard_Mouse_Key_Dark_Sprite_39: 674102395
+      T_Keyboard_Mouse_Key_Dark_Sprite_68: 408926594
+      T_Keyboard_Mouse_Key_Dark_Sprite_46: -1489739204
+      T_Keyboard_Mouse_Key_Dark_Sprite_50: -1231644985
+      T_Keyboard_Mouse_Key_Dark_Sprite_16: 2055630171
+      T_Keyboard_Mouse_Key_Dark_Sprite_104: 1210921503
+      T_Keyboard_Mouse_Key_Dark_Sprite_28: -1523370869
+      T_Keyboard_Mouse_Key_Dark_Sprite_42: -123801512
+      T_Keyboard_Mouse_Key_Dark_Sprite_22: -1311718353
+      T_Keyboard_Mouse_Key_Dark_Sprite_53: 683540818
+      T_Keyboard_Mouse_Key_Dark_Sprite_81: 1559682159
+      T_Keyboard_Mouse_Key_Dark_Sprite_101: -1437157704
+      T_Keyboard_Mouse_Key_Dark_Sprite_26: 209664799
+      T_Keyboard_Mouse_Key_Dark_Sprite_74: -12582749
+      T_Keyboard_Mouse_Key_Dark_Sprite_72: 2082281090
+      T_Keyboard_Mouse_Key_Dark_Sprite_30: 1415311220
+      T_Keyboard_Mouse_Key_Dark_Sprite_75: -126217564
+      T_Keyboard_Mouse_Key_Dark_Sprite_9: 338824915
+      T_Keyboard_Mouse_Key_Dark_Sprite_98: 966814418
+      T_Keyboard_Mouse_Key_Dark_Sprite_61: 2128054331
+      T_Keyboard_Mouse_Key_Dark_Sprite_93: 1539180469
+      T_Keyboard_Mouse_Key_Dark_Sprite_15: 1051816315
+      T_Keyboard_Mouse_Key_Dark_Sprite_17: 767598187
+      T_Keyboard_Mouse_Key_Dark_Sprite_83: 243078316
+      T_Keyboard_Mouse_Key_Dark_Sprite_52: -1630577769
+      T_Keyboard_Mouse_Key_Dark_Sprite_13: -1710645375
+      T_Keyboard_Mouse_Key_Dark_Sprite_70: 1549931019
+      T_Keyboard_Mouse_Key_Dark_Sprite_29: -1654479137
+      T_Keyboard_Mouse_Key_Dark_Sprite_55: 369527217
+      T_Keyboard_Mouse_Key_Dark_Sprite_88: -2021457822
+      T_Keyboard_Mouse_Key_Dark_Sprite_76: -310515972
+      T_Keyboard_Mouse_Key_Dark_Sprite_71: 515764516
+      T_Keyboard_Mouse_Key_Dark_Sprite_90: 464703827
+      T_Keyboard_Mouse_Key_Dark_Sprite_7: -163575844
+      T_Keyboard_Mouse_Key_Dark_Sprite_21: -1454205792
+      T_Keyboard_Mouse_Key_Dark_Sprite_2: 1598005707
+      T_Keyboard_Mouse_Key_Dark_Sprite_57: -683438616
+      T_Keyboard_Mouse_Key_Dark_Sprite_41: 203983879
+      T_Keyboard_Mouse_Key_Dark_Sprite_44: 595620862
+      T_Keyboard_Mouse_Key_Dark_Sprite_78: -1223870183
+      T_Keyboard_Mouse_Key_Dark_Sprite_85: -1898204377
+      T_Keyboard_Mouse_Key_Dark_Sprite_102: 286627234
+      T_Keyboard_Mouse_Key_Dark_Sprite_11: 1541252255
+      T_Keyboard_Mouse_Key_Dark_Sprite_84: 1345776739
+      T_Keyboard_Mouse_Key_Dark_Sprite_100: -1221662097
+      T_Keyboard_Mouse_Key_Dark_Sprite_67: -282961789
+      T_Keyboard_Mouse_Key_Dark_Sprite_33: -356922077
+      T_Keyboard_Mouse_Key_Dark_Sprite_60: 756321072
+      T_Keyboard_Mouse_Key_Dark_Sprite_80: 2047735819
+      T_Keyboard_Mouse_Key_Dark_Sprite_92: 1706370676
+      T_Keyboard_Mouse_Key_Dark_Sprite_12: -792537955
+      T_Keyboard_Mouse_Key_Dark_Sprite_54: -1640521803
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

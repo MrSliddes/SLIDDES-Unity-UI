@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +22,7 @@ namespace SLIDDES.UI
         public override void Initialize(MonoBehaviour monoBehaviour, params object[] objects)
         {
             base.Initialize(monoBehaviour, objects);
-            navigation = (Navigation)objects[0];
+            navigation = (Navigation)monoBehaviour;
 
             normalSprite = image.sprite;
 
