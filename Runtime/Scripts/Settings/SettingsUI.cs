@@ -7,17 +7,11 @@ namespace SLIDDES.UI
     public class SettingsUI : MonoBehaviour
     {
         [SerializeField] private bool onMenuOpenInputSolo;
+        [SerializeField] private bool dontDestroyOnLoad;
 
-        // Start is called before the first frame update
-        void Start()
+        private void Awake()
         {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
+            if(dontDestroyOnLoad) DontDestroyOnLoad(transform.GetComponentInParent<Canvas>().gameObject);
         }
 
         public void Open()

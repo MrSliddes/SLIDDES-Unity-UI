@@ -49,6 +49,12 @@ namespace SLIDDES.UI
 
         private IEnumerator GenerateAsync()
         {
+            if(InputManager.LastPlayerInputPress == null)
+            {
+                Debug.Log($"{debugPrefix} No player to generate for");
+                yield break;
+            }
+
             Debug.Log($"{debugPrefix} Generate input rebindings UI for {InputManager.LastPlayerInputPress.Index}");
 
             controlBindingsTextField.text = $"Control Bindings - Player {InputManager.LastPlayerInputPress.Index + 1}";
