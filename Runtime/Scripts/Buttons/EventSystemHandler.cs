@@ -9,8 +9,11 @@ namespace SLIDDES.UI
     [AddComponentMenu("SLIDDES/UI/EventSystemHandler")]
     public class EventSystemHandler : MonoBehaviour
     {
+        public static GameObject SelectedGameObject { get; private set; }
+
         public void SetSelectedGameObject(GameObject selected)
         {
+            SelectedGameObject = selected;
             if(EventSystem.current != null)
             {
                 EventSystem.current.SetSelectedGameObject(selected);

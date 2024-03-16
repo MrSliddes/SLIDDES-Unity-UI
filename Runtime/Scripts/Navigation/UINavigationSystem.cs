@@ -32,7 +32,8 @@ namespace SLIDDES.UI
             inputSystemUIInputModule.move.action.performed += OnMove;
             if(multiplayerEventSystem != null )
             {
-                multiplayerEventSystem.SetSelectedGameObject(EventSystem.current.currentSelectedGameObject);
+                GameObject g = EventSystem.current.currentSelectedGameObject != null ? EventSystem.current.currentSelectedGameObject : EventSystemHandler.SelectedGameObject;
+                multiplayerEventSystem.SetSelectedGameObject(g);
             }
 
             if(syncEventSystems)
