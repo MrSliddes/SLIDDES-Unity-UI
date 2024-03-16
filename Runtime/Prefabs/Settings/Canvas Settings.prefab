@@ -121,7 +121,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452995676711374}
   m_HandleRect: {fileID: 4057452995676711369}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -347,7 +347,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 3
+  transitionType: 67
   transitionProcedural:
     targetGraphic: {fileID: 4057452996723314154}
     siblingTransform: {fileID: 0}
@@ -968,7 +968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.00048828125, y: -0.000029698453}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452995575213573
@@ -1687,7 +1687,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 3
+  transitionType: 67
   transitionProcedural:
     targetGraphic: {fileID: 4057452995976010407}
     siblingTransform: {fileID: 0}
@@ -2046,7 +2046,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 1
+  transitionType: 65
   transitionProcedural:
     targetGraphic: {fileID: 4057452996249838736}
     siblingTransform: {fileID: 0}
@@ -2737,7 +2737,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452996514551848}
   m_HandleRect: {fileID: 4057452996514551851}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3373,6 +3373,7 @@ GameObject:
   - component: {fileID: 4057452995933812546}
   - component: {fileID: 4057452995933812544}
   - component: {fileID: 4057452995933812547}
+  - component: {fileID: 889436299}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3505,6 +3506,170 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &889436299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4057452995933812557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8201de37fbb90334eb6b73b5a76611c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitions:
+    types: 2
+    animation:
+      animator: {fileID: 0}
+      normalTrigger: Normal
+      hoverTrigger: Hover
+      pressedTrigger: Pressed
+      selectTrigger: Selected
+      disabledTrigger: Disabled
+      normalizedTransitionDuration: 0.1
+    audio:
+      connectToAudioReceiverUI: 1
+      audioReceiverUI: {fileID: 0}
+      audioEventOnEnable: onEnable
+      audioEventOnDisable: onDisable
+      audioEventEnter: enter
+      audioEventUpdate: update
+      audioEventExit: exit
+      audioEventPointerDown: pointerDown
+      audioEventPointerUp: pointerUp
+    color:
+      targetGraphic: {fileID: 0}
+      textField: {fileID: 4057452995933812547}
+      canvasGroup: {fileID: 0}
+      colorBlockGraphic:
+        m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+        m_HighlightedColor: {r: 0.43529412, g: 0.43529412, b: 0.43529412, a: 1}
+        m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
+        m_SelectedColor: {r: 0.43529412, g: 0.43529412, b: 0.43529412, a: 1}
+        m_DisabledColor: {r: 0.3764706, g: 0.3764706, b: 0.3764706, a: 1}
+        m_ColorMultiplier: 1
+        m_FadeDuration: 0.1
+      colorBlockText:
+        m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+        m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+        m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+        m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+        m_DisabledColor: {r: 1, g: 1, b: 1, a: 0}
+        m_ColorMultiplier: 1
+        m_FadeDuration: 0.25
+      fadeTime: 0.25
+      fadeDelayBySiblingIndex: 0
+    procedural:
+      targetGraphic: {fileID: 0}
+      siblingTransform: {fileID: 0}
+      timeOnEnable: 0.25
+      onEnableDelayBySiblingIndex: 0
+      onEnableLocalPosition: {x: 0, y: 0, z: 0}
+      onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
+      onEnableLocalScale: {x: 1, y: 1, z: 1}
+      timeToSelect: 0.1
+      selectLocalPosition: {x: 0, y: 0, z: 0}
+      selectLocalEulerRotation: {x: 0, y: 0, z: 0}
+      selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+      transitionToHoverTime: 0.1
+      hoveringLocalScaleAnimationCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1.1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.5
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1.1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      timeToDeselect: 0.1
+      deselectLocalPosition: {x: 0, y: 0, z: 0}
+      deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
+      deselectLocalScale: {x: 1, y: 1, z: 1}
+      timePointerDown: 0.1
+      pointerDownLocalPosition: {x: 0, y: 0, z: 0}
+      pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
+      pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+      timePointerUp: 0.2
+      pointerUpLocalPosition: {x: 0, y: 0, z: 0}
+      pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
+      pointerUpLocalScale: {x: 1, y: 1, z: 1}
+      pointerUpLocalScaleAnimationCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.5
+          value: 1.5
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    rendering:
+      transform: {fileID: 0}
+      canvas: {fileID: 0}
+      sortOrderNormal: -1
+      sortOrderHover: -1
+      siblingIndexHover: -1
+      onSelectSetScrollRectPosition: 0
+    sprite:
+      image: {fileID: 0}
+      hoverSprite: {fileID: 0}
+      pressedSprite: {fileID: 0}
+      selectedSprite: {fileID: 0}
+      disabledSprite: {fileID: 0}
+    text:
+      textField: {fileID: 0}
+      hoverText: 
+      pressedText: 
+      selectedText: 
+      disabledText: 
 --- !u!1 &4057452995946570003
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,7 +3823,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f129e2fe9f5337c4eab62335aef4a9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onMenuOpenInputSolo: 1
+  onMenuOpenInputSolo: 0
+  dontDestroyOnLoad: 0
 --- !u!114 &4057452995969239070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4753,8 +4919,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452997288380431}
   m_HandleRect: {fileID: 4057452997288380430}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.9999999
+  m_Value: 1
+  m_Size: 0.99999976
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5199,7 +5365,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452997399973988}
   m_HandleRect: {fileID: 4057452997399973991}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5278,7 +5444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0009765625, y: -0.000027424168}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452996132221344
@@ -6857,8 +7023,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452995396868552}
   m_HandleRect: {fileID: 4057452995396868555}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.99999976
+  m_Value: 0
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7050,7 +7216,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.00006011393}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452996477705341
@@ -8187,7 +8353,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000061035156, y: -0.000016513097}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452996642522962
@@ -9100,7 +9266,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 3
+  transitionType: 67
   transitionProcedural:
     targetGraphic: {fileID: 4057452996749205751}
     siblingTransform: {fileID: 0}
@@ -10002,7 +10168,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452996246544954}
   m_HandleRect: {fileID: 4057452996246544933}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -12587,7 +12753,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 3
+  transitionType: 67
   transitionProcedural:
     targetGraphic: {fileID: 4057452996197684527}
     siblingTransform: {fileID: 0}
@@ -13250,7 +13416,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452997188973686}
   m_HandleRect: {fileID: 4057452997188973681}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -16155,6 +16321,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5833415184923105577, guid: fcc414a328a52b94a8e0aaf2242fec2a, type: 3}
   m_PrefabInstance: {fileID: 4057452996413236023}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4057452996413235911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7546498284684589598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92fd88b366343214cb1caaf3968f9f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4057452996413235913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16188,18 +16366,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   confirmPrompt: {fileID: 4057452996528305711}
---- !u!114 &4057452996413235911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546498284684589598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92fd88b366343214cb1caaf3968f9f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4057452997190496537
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -293,7 +293,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 3
+  transitionType: 67
   transitionProcedural:
     targetGraphic: {fileID: 5833415184559746621}
     siblingTransform: {fileID: 0}
@@ -425,6 +425,16 @@ MonoBehaviour:
     sortOrderHover: -1
     siblingIndexHover: -1
     onSelectSetScrollRectPosition: 0
+  transitionAudio:
+    connectToAudioReceiverUI: 1
+    audioReceiverUI: {fileID: 0}
+    audioEventOnEnable: onEnable
+    audioEventOnDisable: onDisable
+    audioEventEnter: enter
+    audioEventUpdate: update
+    audioEventExit: exit
+    audioEventPointerDown: pointerDown
+    audioEventPointerUp: pointerUp
   inputAction:
     m_Name: 
     m_Type: 0
