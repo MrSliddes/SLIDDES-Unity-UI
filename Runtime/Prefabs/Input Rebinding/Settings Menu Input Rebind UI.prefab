@@ -159,7 +159,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 35
+  transitionType: 99
   transitionProcedural:
     targetGraphic: {fileID: 1204762747893999009}
     siblingTransform: {fileID: 4721973363528056399}
@@ -980,7 +980,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 3
+  transitionType: 67
   transitionProcedural:
     targetGraphic: {fileID: 7041882560356435162}
     siblingTransform: {fileID: 4721973363528056399}
