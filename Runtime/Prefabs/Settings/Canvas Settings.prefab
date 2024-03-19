@@ -121,7 +121,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452995676711374}
   m_HandleRect: {fileID: 4057452995676711369}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -968,7 +968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00048828125, y: -0.000029698453}
+  m_AnchoredPosition: {x: 0, y: -0.00078763644}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452995575213573
@@ -1318,7 +1318,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 3
+  transitionType: 67
   transitionProcedural:
     targetGraphic: {fileID: 4057452997396059214}
     siblingTransform: {fileID: 0}
@@ -2330,7 +2330,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 3
+  transitionType: 67
   transitionProcedural:
     targetGraphic: {fileID: 4057452997408729111}
     siblingTransform: {fileID: 0}
@@ -3776,9 +3776,9 @@ GameObject:
   - component: {fileID: 4057452995969239068}
   - component: {fileID: 4057452995969239071}
   - component: {fileID: 4057452995969239056}
-  - component: {fileID: 4057452995969239057}
-  - component: {fileID: 4057452995969239062}
   - component: {fileID: 4057452995969239063}
+  - component: {fileID: 2919471689013077478}
+  - component: {fileID: 1391133960917846063}
   m_Layer: 5
   m_Name: Settings UI
   m_TagString: Untagged
@@ -4073,7 +4073,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4057452995969239057}
+      - m_Target: {fileID: 2919471689013077478}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -4085,7 +4085,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4057452995969239062}
+      - m_Target: {fileID: 1391133960917846063}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -4139,7 +4139,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4057452995969239057}
+      - m_Target: {fileID: 2919471689013077478}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -4151,7 +4151,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 4057452995969239062}
+      - m_Target: {fileID: 1391133960917846063}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -4368,64 +4368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92fd88b366343214cb1caaf3968f9f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4057452995969239057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4057452995969239064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcab5a101255081439ae42439f5a6509, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iarm:
-    inputActionReference: {fileID: -7224421547992604887, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
-  onCallback:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4057452995969239069}
-        m_TargetAssemblyTypeName: SLIDDES.UI.Menus.Menu, SLIDDES.UI.Menus
-        m_MethodName: Open
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &4057452995969239062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4057452995969239064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcab5a101255081439ae42439f5a6509, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iarm:
-    inputActionReference: {fileID: 5356928956677845802, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
-  onCallback:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4057452995969239069}
-        m_TargetAssemblyTypeName: SLIDDES.UI.Menus.Menu, SLIDDES.UI.Menus
-        m_MethodName: Close
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &4057452995969239063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4468,6 +4410,76 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   showDebug: 0
+--- !u!114 &2919471689013077478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4057452995969239064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029b3e46f2e7e204db958e193640968b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iarm:
+    inputActionReference: {fileID: -7224421547992604887, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
+  onCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4057452995969239069}
+        m_TargetAssemblyTypeName: SLIDDES.UI.Menus.Menu, SLIDDES.UI.Menus
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onCallbackCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  onCallbackPerformed:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1391133960917846063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4057452995969239064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029b3e46f2e7e204db958e193640968b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iarm:
+    inputActionReference: {fileID: 5356928956677845802, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
+  onCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4057452995969239069}
+        m_TargetAssemblyTypeName: SLIDDES.UI.Menus.Menu, SLIDDES.UI.Menus
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onCallbackCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  onCallbackPerformed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4057452995976010401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4920,7 +4932,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4057452997288380430}
   m_Direction: 0
   m_Value: 1
-  m_Size: 0.99999976
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5444,7 +5456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0009765625, y: -0.000027424168}
+  m_AnchoredPosition: {x: -0.00048828125, y: -0.00078763644}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452996132221344
@@ -7023,8 +7035,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452995396868552}
   m_HandleRect: {fileID: 4057452995396868555}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.9999999
+  m_Value: 1
+  m_Size: 0.99999976
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7216,7 +7228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00006011393}
+  m_AnchoredPosition: {x: 0, y: -0.0007767079}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452996477705341
@@ -7464,7 +7476,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4057452995969239062}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -7491,7 +7503,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 4057452995969239062}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -7909,7 +7921,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 3
+  transitionType: 67
   transitionProcedural:
     targetGraphic: {fileID: 4057452996217847833}
     siblingTransform: {fileID: 0}
@@ -8353,7 +8365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -0.000016513097}
+  m_AnchoredPosition: {x: 0, y: -0.00078763644}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452996642522962
@@ -10508,7 +10520,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeBetweenPresses: 0
-  transitionType: 3
+  transitionType: 67
   transitionProcedural:
     targetGraphic: {fileID: 4057452997193048999}
     siblingTransform: {fileID: 0}
