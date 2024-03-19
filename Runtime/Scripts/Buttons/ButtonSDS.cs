@@ -104,6 +104,7 @@ namespace SLIDDES.UI
         [SerializeField] private TransitionAudio transitionAudio;
 
         [SerializeField] private InputAction inputAction;
+        [SerializeField] private InputActionPhase inputPhaseCallbackIARM = InputActionPhase.Canceled;
         [SerializeField] private InputActionReferenceMultiplayer inputActionReferenceMultiplayer;
 
         public UnityEvent<AxisEventData> onMove;
@@ -157,9 +158,40 @@ namespace SLIDDES.UI
 
             inputActionReferenceMultiplayer.Callback = x =>
             {
-                if(Interactable)
+                switch(inputPhaseCallbackIARM)
                 {
-                    OnSubmit(null);
+                    case InputActionPhase.Disabled:
+                        if(Interactable && x.phase == InputActionPhase.Disabled)
+                        {
+                            OnSubmit(null);
+                        }
+                        break;
+                    case InputActionPhase.Waiting:
+                        if(Interactable && x.phase == InputActionPhase.Waiting)
+                        {
+                            OnSubmit(null);
+                        }
+                        break;
+                    case InputActionPhase.Started:
+                        if(Interactable && x.phase == InputActionPhase.Started)
+                        {
+                            OnSubmit(null);
+                        }
+                        break;
+                    case InputActionPhase.Performed:
+                        if(Interactable && x.phase == InputActionPhase.Performed)
+                        {
+                            OnSubmit(null);
+                        }
+                        break;
+                    case InputActionPhase.Canceled:
+                        if(Interactable && x.phase == InputActionPhase.Canceled)
+                        {
+                            OnSubmit(null);
+                        }
+                        break;
+                    default:
+                        break;
                 }
             };
 

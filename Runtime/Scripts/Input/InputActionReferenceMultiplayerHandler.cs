@@ -13,22 +13,25 @@ namespace SLIDDES.UI
     {
         [SerializeField] private InputActionReferenceMultiplayer iarm;
 
-        public UnityEvent<InputAction.CallbackContext> onCallback;
-        public UnityEvent<InputAction.CallbackContext> onCallbackCanceled;
+        public UnityEvent<InputAction.CallbackContext> onCallbackStarted;
         public UnityEvent<InputAction.CallbackContext> onCallbackPerformed;
+        public UnityEvent<InputAction.CallbackContext> onCallbackCanceled;
 
         private void Awake()
         {
             iarm.Callback = x =>
             {
-                onCallback?.Invoke(x);
+                if(x.started)
+                {
+                    onCallbackStarted?.Invoke(x);
+                }
+                if(x.performed)
+                {
+                    onCallbackPerformed?.Invoke(x);
+                }
                 if(x.canceled)
                 {
                     onCallbackCanceled?.Invoke(x);
-                }
-                else if(x.performed)
-                {
-                    onCallbackPerformed?.Invoke(x);
                 }
             };
         }

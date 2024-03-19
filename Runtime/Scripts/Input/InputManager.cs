@@ -439,11 +439,11 @@ namespace SLIDDES.UI
             {
                 if(add)
                 {
-                    players[i].InputActionAsset.FindAction(iarm.ActionName).canceled += iarm.Callback;
+                    iarm.AddCallbackToAction(players[i].InputActionAsset.FindAction(iarm.ActionName));
                 }
                 else
                 {
-                    players[i].InputActionAsset.FindAction(iarm.ActionName).canceled -= iarm.Callback;
+                    iarm.RemoveCallbackFromAction(players[i].InputActionAsset.FindAction(iarm.ActionName));
                 }
             }
         }
@@ -455,7 +455,7 @@ namespace SLIDDES.UI
                 for(int j = 0; j < inputActionReferencesMultiplayer.Count; j++)
                 {
                     InputActionReferenceMultiplayer iarm = inputActionReferencesMultiplayer[j];
-                    players[i].InputActionAsset.FindAction(iarm.ActionName).canceled -= iarm.Callback;
+                    iarm.RemoveCallbackFromAction(players[i].InputActionAsset.FindAction(iarm.ActionName));
                 }
             }
         }
@@ -536,7 +536,7 @@ namespace SLIDDES.UI
                 for(int j = 0; j < inputActionReferencesMultiplayer.Count; j++)
                 {
                     InputActionReferenceMultiplayer iarm = inputActionReferencesMultiplayer[j];
-                    players[i].InputActionAsset.FindAction(iarm.ActionName).canceled += iarm.Callback;
+                    iarm.AddCallbackToAction(players[i].InputActionAsset.FindAction(iarm.ActionName));
                 }
             }
         }

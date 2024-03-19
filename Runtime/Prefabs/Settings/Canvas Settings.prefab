@@ -121,7 +121,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452995676711374}
   m_HandleRect: {fileID: 4057452995676711369}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -498,6 +498,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
   onMove:
@@ -968,7 +969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00078763644}
+  m_AnchoredPosition: {x: 0.00048828125, y: -0.0007975032}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452995575213573
@@ -1469,6 +1470,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
   onMove:
@@ -1838,6 +1840,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
   onMove:
@@ -2197,6 +2200,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 6938515928263943320, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
   onMove:
@@ -2481,6 +2485,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
   onMove:
@@ -4424,7 +4429,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iarm:
     inputActionReference: {fileID: -7224421547992604887, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
-  onCallback:
+  onCallbackStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onCallbackPerformed:
+    m_PersistentCalls:
+      m_Calls: []
+  onCallbackCanceled:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4057452995969239069}
@@ -4439,12 +4450,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onCallbackCanceled:
-    m_PersistentCalls:
-      m_Calls: []
-  onCallbackPerformed:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1391133960917846063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4459,7 +4464,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iarm:
     inputActionReference: {fileID: 5356928956677845802, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
-  onCallback:
+  onCallbackStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onCallbackPerformed:
+    m_PersistentCalls:
+      m_Calls: []
+  onCallbackCanceled:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4057452995969239069}
@@ -4474,12 +4485,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onCallbackCanceled:
-    m_PersistentCalls:
-      m_Calls: []
-  onCallbackPerformed:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &4057452995976010401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4931,8 +4936,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452997288380431}
   m_HandleRect: {fileID: 4057452997288380430}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5456,7 +5461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00048828125, y: -0.00078763644}
+  m_AnchoredPosition: {x: 0, y: -0.0007975032}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452996132221344
@@ -7035,8 +7040,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4057452995396868552}
   m_HandleRect: {fileID: 4057452995396868555}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.99999976
+  m_Value: 0
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7228,7 +7233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0007767079}
+  m_AnchoredPosition: {x: 0, y: -0.0007975032}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452996477705341
@@ -7476,7 +7481,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1391133960917846063}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -7491,9 +7496,9 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4057452995969239069}
-        m_TargetAssemblyTypeName: SLIDDES.UI.Menus.Menu, SLIDDES.UI.Menus
-        m_MethodName: set_ExternalEnabled
+      - m_Target: {fileID: 1391133960917846063}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7503,9 +7508,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
+      - m_Target: {fileID: 4057452995969239069}
+        m_TargetAssemblyTypeName: SLIDDES.UI.Menus.Menu, SLIDDES.UI.Menus
+        m_MethodName: set_ExternalEnabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8081,6 +8086,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: -8328880320836770379, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
   onMove:
@@ -8365,7 +8371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00078763644}
+  m_AnchoredPosition: {x: -0.000061035156, y: -0.0007975032}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4057452996642522962
@@ -9429,6 +9435,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
   onMove:
@@ -10680,6 +10687,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
   onMove:
@@ -11330,6 +11338,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
   onMove:
@@ -12916,6 +12925,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
   onMove:
@@ -13664,6 +13674,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: -5046726711751775229, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
   onMove:

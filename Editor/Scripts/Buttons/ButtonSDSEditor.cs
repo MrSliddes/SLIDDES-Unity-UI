@@ -22,6 +22,7 @@ namespace SLIDDES.UI.Editor
         private SerializedProperty propertyTransitionAudio;
 
         private SerializedProperty propertyInputAction;
+        private SerializedProperty propertyInputPhaseCallbackIARM;
         private SerializedProperty propertyInputActionReferenceMultiplayer;
 
         private SerializedProperty propertyOnMove;
@@ -63,6 +64,7 @@ namespace SLIDDES.UI.Editor
             propertyTransitionAudio = serializedObject.FindProperty("transitionAudio");
 
             propertyInputAction = serializedObject.FindProperty("inputAction");
+            propertyInputPhaseCallbackIARM = serializedObject.FindProperty("inputPhaseCallbackIARM");
             propertyInputActionReferenceMultiplayer = serializedObject.FindProperty("inputActionReferenceMultiplayer");
 
             propertyOnMove = serializedObject.FindProperty("onMove");
@@ -201,6 +203,7 @@ namespace SLIDDES.UI.Editor
             if(editorFoldoutExternal)
             {
                 EditorGUILayout.PropertyField(propertyInputAction);
+                EditorGUILayout.PropertyField(propertyInputPhaseCallbackIARM);
                 EditorGUILayout.PropertyField(propertyInputActionReferenceMultiplayer);
             }
         }

@@ -38,5 +38,19 @@ namespace SLIDDES.UI
 
             InputManager.RemoveInputActionReferenceMultiplayer(this);
         }
+
+        public void AddCallbackToAction(InputAction inputAction)
+        {
+            inputAction.started += Callback;
+            inputAction.performed += Callback;
+            inputAction.canceled += Callback;
+        }
+
+        public void RemoveCallbackFromAction(InputAction inputAction)
+        {
+            inputAction.started -= Callback;
+            inputAction.performed -= Callback;
+            inputAction.canceled -= Callback;
+        }
     }
 }
