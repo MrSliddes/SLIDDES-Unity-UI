@@ -27,13 +27,32 @@ namespace SLIDDES.UI
         public UnityEvent onRebindComplete;
 
         private string bindingID;
+        private Content contentOverride;
         private InputActionReference inputActionReference;
         private InputActionRebindingExtensions.RebindingOperation rebindingOperation;
 
-        public void Initialize(InputActionReference inputActionReference, TooltipContent tooltipContent = null)
+        public void Initialize(InputActionReference inputActionReference, Content contentOverride = null)
         {
             this.inputActionReference = inputActionReference;
-            if(tooltipSender != null) tooltipSender.Content = tooltipContent;
+            this.contentOverride = contentOverride;
+            if(this.contentOverride != null)
+            {
+                if(!this.contentOverride.displayInputRebind)
+                {
+                    if(destroyOnFailure)
+                    {
+                        Destroy(container);
+                    }
+                    else
+                    {
+                        container.SetActive(false);
+                    }
+                    return;
+                }
+
+                if(tooltipSender != null) tooltipSender.Content = contentOverride.tooltipContent;
+            }
+
             textField.text = inputActionReference.action.name;
             textInputBind.spriteAsset = InputManager.CurrentSpriteAsset;
             bindingID = InputManager.GetBindingID(inputActionReference);
@@ -109,7 +128,9 @@ namespace SLIDDES.UI
                 return;
             }
 
-            textField.text = $"[{inputActionReference.action.actionMap.name}] {inputActionReference.action.name}";
+            string actionMapNameDisplay = contentOverride != null ? contentOverride.actionMapNameDisplay : $"[{inputActionReference.action.actionMap.name}]";
+            string inputActionNameDisplay = contentOverride != null ? contentOverride.inputActionNameDisplay : inputActionReference.action.name;
+            textField.text = $"{actionMapNameDisplay} {inputActionNameDisplay}";
 
             string stringInputBind = InputManager.GetInputPrompt(inputActionReference);
             if(string.IsNullOrEmpty(stringInputBind))
@@ -241,6 +262,20 @@ namespace SLIDDES.UI
             {
                 UpdateBindingDisplay();
             }
+        }
+
+        [System.Serializable]
+        public class Content
+        {
+            public string inputActionNameReference;
+            public string actionMapReference;
+            public bool displayInputRebind = true;
+
+            [Space]
+
+            public string inputActionNameDisplay;
+            public string actionMapNameDisplay;
+            public TooltipContent tooltipContent;
         }
     }
 }

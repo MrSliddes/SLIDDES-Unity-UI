@@ -7249,18 +7249,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setEventSystemSelectedOnGenerate: 0
-  inputActionsTooltipContent:
-  - description: 
-  - description: 
-  - description: 
-  - description: 
-  - description: 
-  - description: 
-  - description: 
-  - description: 
-  - description: 
-  - description: 
-  - description: 
+  inputRebindUIContents:
+  - actionMapReference: SDS_Player
+    inputActionNameReference: Move Primary
+    actionMapNameDisplay: 
+    inputActionNameDisplay: Walking
+    tooltipContent:
+      description: for walking around
   inputRebindsUIParent: {fileID: 4057452996477705342}
   prefabInputRebindUI: {fileID: 8035099960685815308, guid: d855e350ca814e343afe5c1702f39cea, type: 3}
   controlBindingsTextField: {fileID: 1305474247305610567}

@@ -499,8 +499,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 76
     m_Scale: 1
-    m_Name: + 1
-    m_HashCode: 47930
+    m_Name: +
+    m_HashCode: 43
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 77
@@ -657,6 +657,12 @@ MonoBehaviour:
     m_Scale: 1
     m_Name: Escape
     m_HashCode: -1689534303
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 20
+    m_Scale: 1
+    m_Name: Control
+    m_HashCode: -2114001209
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:

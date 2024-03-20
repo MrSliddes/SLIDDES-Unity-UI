@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,7 +15,7 @@ namespace SLIDDES.UI
     public class InputRebindsUI : MonoBehaviour
     {
         [SerializeField] private bool setEventSystemSelectedOnGenerate = true;
-        [SerializeField] private TooltipContent[] inputActionsTooltipContent;
+        [SerializeField] private InputRebindUI.Content[] inputRebindUIContents;
         [SerializeField] private Transform inputRebindsUIParent;
         [SerializeField] private GameObject prefabInputRebindUI;
         [SerializeField] private TMP_Text controlBindingsTextField;
@@ -94,12 +95,10 @@ namespace SLIDDES.UI
                 if(inputRebindUI != null)
                 {
                     inputRebindUIs.Add(inputRebindUI);
-                    TooltipContent tooltipContent = null;
-                    if(i <= inputActionsTooltipContent.Length - 1)
-                    {
-                        tooltipContent = inputActionsTooltipContent[i];
-                    }
-                    inputRebindUI.Initialize(item, tooltipContent);
+
+                    InputRebindUI.Content content = inputRebindUIContents.FirstOrDefault(x => x.inputActionNameReference == item.action.name && x.actionMapReference == item.action.actionMap.name);
+
+                    inputRebindUI.Initialize(item, content);
                 }
                 else
                 {
