@@ -438,6 +438,7 @@ namespace SLIDDES.UI
             for (int i = 0; i < players.Count; i++)
             {
                 if(players[i] == null) continue;
+                if(players[i].InputActionAsset == null) continue;
 
                 if(add)
                 {
@@ -719,7 +720,11 @@ namespace SLIDDES.UI
             public InputDevice CurrentInputDevice { get; set; }
             public InputActionAsset InputActionAsset 
             {
-                get { return PlayerInput.actions; }
+                get 
+                {
+                    if(PlayerInput == null) return null;
+                    return PlayerInput.actions; 
+                }
                 set { PlayerInput.actions = value; }
             }
             public PlayerInput PlayerInput
