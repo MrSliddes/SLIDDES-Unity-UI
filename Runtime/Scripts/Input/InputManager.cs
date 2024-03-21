@@ -437,6 +437,8 @@ namespace SLIDDES.UI
 
             for (int i = 0; i < players.Count; i++)
             {
+                if(players[i] == null) continue;
+
                 if(add)
                 {
                     iarm.AddCallbackToAction(players[i].InputActionAsset.FindAction(iarm.ActionName));
