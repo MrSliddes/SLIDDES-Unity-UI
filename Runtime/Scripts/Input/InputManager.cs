@@ -195,12 +195,14 @@ namespace SLIDDES.UI
         /// </example>
         public static string GetInputPrompt(InputActionReference inputActionReference)
         {
+            if(inputActionReference == null || inputActionReference.action == null) return "";
+
             InputActionReference playerClonedInputActionReference;
             if(Application.isPlaying)
             {
                 // Since each player has their own cloned InputActionAsset we need to find the same inputActionReference in the asset
                 // Get the cloned version of the inputActionReference
-                if(LastPlayerInputPress == null)
+                if(LastPlayerInputPress == null || LastPlayerInputPress.InputActionAsset == null)
                 {
                     return "";
                 }
