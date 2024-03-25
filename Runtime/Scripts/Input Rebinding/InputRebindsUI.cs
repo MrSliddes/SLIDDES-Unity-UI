@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,24 +26,65 @@ namespace SLIDDES.UI
         private readonly string debugPrefix = "[InputRebindsUI]";
         private Coroutine coroutineGenerate;
         private List<InputRebindUI> inputRebindUIs = new List<InputRebindUI>();
+        private UnityAction<string> actionOnInputDeviceChange;
+        private UnityAction<InputManager.Player> actionOnLastPlayerInputPressChanged;
+
+        private void Awake()
+        {
+            actionOnInputDeviceChange = x => 
+            { 
+                if(!string.IsNullOrEmpty(x))
+                {
+                    Generate(); 
+                }
+            };
+            actionOnLastPlayerInputPressChanged = x => 
+            { 
+                if(x != null)
+                {
+                    Generate(); 
+                }
+            };
+        }
 
         private void OnEnable()
         {
-            InputManager.OnInputDeviceNameChanged += x => Generate();
-            InputManager.OnLastPlayerInputPressChanged += x => Generate();
+            if(InputManager.Instance != null)
+            {
+                InputManager.OnInputDeviceNameChanged += actionOnInputDeviceChange;
+                InputManager.OnLastPlayerInputPressChanged += actionOnLastPlayerInputPressChanged;
+            }
             Generate();
         }
 
         private void OnDisable()
         {
-            InputManager.OnInputDeviceNameChanged -= x => Generate();
-            InputManager.OnLastPlayerInputPressChanged -= x => Generate();
+            if(InputManager.Instance != null )
+            {
+                InputManager.OnInputDeviceNameChanged -= actionOnInputDeviceChange;
+                InputManager.OnLastPlayerInputPressChanged -= actionOnLastPlayerInputPressChanged;
+            }
+        }
+
+        private void OnDestroy()
+        {
+            if(InputManager.Instance != null)
+            {
+                InputManager.OnInputDeviceNameChanged -= actionOnInputDeviceChange;
+                InputManager.OnLastPlayerInputPressChanged -= actionOnLastPlayerInputPressChanged;
+            }
         }
 
         public void Generate()
         {
             if (this.isActiveAndEnabled)
             {
+                if(InputManager.Instance == null)
+                {
+                    Debug.Log("Cannot generate as InputManger is null", this);
+                    return;
+                }
+
                 if (coroutineGenerate != null) StopCoroutine(coroutineGenerate);
                 coroutineGenerate = StartCoroutine(GenerateAsync());                
             }

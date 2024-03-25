@@ -480,6 +480,8 @@ namespace SLIDDES.UI
 
             // Clear old
             players.Clear();
+            LastPlayerInputPress = null;
+            LastPlayerInputDeviceChanged = null;
 
             // Get all players
             PlayerInput[] playersInScene = FindObjectsOfType<PlayerInput>(true);
