@@ -429,6 +429,8 @@ namespace SLIDDES.UI
         {
             foreach(Player player in Players)
             {
+                if(player == null || player.PlayerInput == null) continue;
+                if(!player.PlayerInput.inputIsActive || !player.PlayerInput.isActiveAndEnabled) continue;
                 player.PlayerInput.SwitchCurrentActionMap(mapNameOrID);
             }
         }

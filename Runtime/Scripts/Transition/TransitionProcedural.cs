@@ -75,7 +75,7 @@ namespace SLIDDES.UI
             if(onEnableDelayBySiblingIndex)
             {
                 int index = Mathf.Clamp(siblingTransform.GetSiblingIndex(), 1, 99);
-                yield return new WaitForSeconds(timeOnEnable * index);
+                yield return new WaitForSecondsRealtime(timeOnEnable * index);
             }
 
             while(transitionTimer < timeOnEnable)
