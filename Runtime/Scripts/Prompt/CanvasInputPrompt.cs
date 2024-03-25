@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace SLIDDES.UI
 {
@@ -12,19 +13,61 @@ namespace SLIDDES.UI
     [RequireComponent(typeof(Canvas))]
     public class CanvasInputPrompt : MonoBehaviour
     {
+        private UnityAction<string> actionOnInputDeviceNameChanged;
+        private UnityAction actionOnForceUpdatePrompts;
+        private UnityAction<InputManager.Player> actionOnLastPlayerInputPressChanged;
+
+        private void Awake()
+        {
+            actionOnInputDeviceNameChanged = x =>
+            {
+                if(!string.IsNullOrEmpty(x))
+                {
+                    UpdatePrompts();
+                }
+            };
+            actionOnForceUpdatePrompts = () =>
+            {
+                UpdatePrompts();
+            };
+            actionOnLastPlayerInputPressChanged = x =>
+            {
+                if(x != null)
+                {
+                    UpdatePrompts();
+                }
+            };
+        }
+
         private void OnEnable()
         {
-            InputManager.OnInputDeviceNameChanged += x => UpdatePrompts();
-            InputManager.OnForceUpdateInputPrompts += () => UpdatePrompts();
-            InputManager.OnLastPlayerInputPressChanged += x => UpdatePrompts();
-            UpdatePrompts();
+            if(InputManager.Instance != null)
+            {
+                InputManager.OnInputDeviceNameChanged += actionOnInputDeviceNameChanged;
+                InputManager.OnForceUpdateInputPrompts += actionOnForceUpdatePrompts;
+                InputManager.OnLastPlayerInputPressChanged += actionOnLastPlayerInputPressChanged;
+                UpdatePrompts();
+            }
         }
 
         private void OnDisable()
         {
-            InputManager.OnInputDeviceNameChanged -= x => UpdatePrompts();
-            InputManager.OnForceUpdateInputPrompts -= () => UpdatePrompts();
-            InputManager.OnLastPlayerInputPressChanged -= x => UpdatePrompts();
+            if (InputManager.Instance != null)
+            {
+                InputManager.OnInputDeviceNameChanged -= actionOnInputDeviceNameChanged;
+                InputManager.OnForceUpdateInputPrompts -= actionOnForceUpdatePrompts;
+                InputManager.OnLastPlayerInputPressChanged -= actionOnLastPlayerInputPressChanged;                
+            }
+        }
+
+        private void OnDestroy()
+        {
+            if(InputManager.Instance != null)
+            {
+                InputManager.OnInputDeviceNameChanged -= actionOnInputDeviceNameChanged;
+                InputManager.OnForceUpdateInputPrompts -= actionOnForceUpdatePrompts;
+                InputManager.OnLastPlayerInputPressChanged -= actionOnLastPlayerInputPressChanged;
+            }
         }
 
         // Start is called before the first frame update
