@@ -459,6 +459,8 @@ namespace SLIDDES.UI
             {
                 for(int j = 0; j < inputActionReferencesMultiplayer.Count; j++)
                 {
+                    if(players[i] == null) continue;
+                    if(players[i].InputActionAsset == null) continue;
                     InputActionReferenceMultiplayer iarm = inputActionReferencesMultiplayer[j];
                     iarm.RemoveCallbackFromAction(players[i].InputActionAsset.FindAction(iarm.ActionName));
                 }
