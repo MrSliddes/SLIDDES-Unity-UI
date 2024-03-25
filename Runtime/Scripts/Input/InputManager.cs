@@ -39,7 +39,7 @@ namespace SLIDDES.UI
         {
             get
             {
-                if(LastPlayerInputPress == null) return InputDeviceNameMouse;
+                if(LastPlayerInputPress == null || LastPlayerInputPress.CurrentInputDevice == null) return InputDeviceNameMouse;
                 return LastPlayerInputPress.CurrentInputDevice.ToString();
             }
         }
@@ -62,7 +62,7 @@ namespace SLIDDES.UI
                 {
                     lastPlayerInputPress = value;
                     if(Instance.showDebug) Debug.Log($"{debugPrefix} Last player that pressed input: {(lastPlayerInputPress != null ? lastPlayerInputPress.Index : "null")}");
-                    if(lastPlayerInputPress != null) Instance.SetCurrentInputDevice(lastPlayerInputPress.CurrentInputDevice.ToString());
+                    if(lastPlayerInputPress != null && lastPlayerInputPress.CurrentInputDevice != null) Instance.SetCurrentInputDevice(lastPlayerInputPress.CurrentInputDevice.ToString());
                     OnLastPlayerInputPressChanged.Invoke(value);
                 }
             }
