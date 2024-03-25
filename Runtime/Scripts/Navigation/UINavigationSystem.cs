@@ -59,6 +59,7 @@ namespace SLIDDES.UI
 
         private void OnLastPlayerInputPressedChanged(InputManager.Player player)
         {
+            if(player == null) return;
             if(!multiplayerEventSystem.enabled) return;
 
             // If changed to this player, set selected to event system
