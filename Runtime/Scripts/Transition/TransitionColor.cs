@@ -186,7 +186,7 @@ namespace SLIDDES.UI
             if(fadeDelayBySiblingIndex)
             {
                 int index = Mathf.Clamp(canvasGroup.transform.GetSiblingIndex(), 1, 99);
-                yield return new WaitForSeconds(fadeTime * index);
+                yield return new WaitForSecondsRealtime(fadeTime * index);
             }
             while(true)
             {
