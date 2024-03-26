@@ -16,6 +16,7 @@ namespace SLIDDES.UI
     public class InputRebindsUI : MonoBehaviour
     {
         [SerializeField] private bool setEventSystemSelectedOnGenerate = true;
+        [SerializeField] private bool generateOnlyInputRebindUIContents;
         [SerializeField] private InputRebindUI.Content[] inputRebindUIContents;
         [SerializeField] private Transform inputRebindsUIParent;
         [SerializeField] private GameObject prefabInputRebindUI;
@@ -132,13 +133,18 @@ namespace SLIDDES.UI
                 // Check if inputActionReference can be created
                 if(!InputManager.AbleToDisplayInputActionReference(item)) continue;
 
+                InputRebindUI.Content content = inputRebindUIContents.FirstOrDefault(x => x.inputActionNameReference == item.action.name && x.actionMapReference == item.action.actionMap.name);
+                if(generateOnlyInputRebindUIContents && content == null)
+                {
+                    continue;
+                }
+
                 GameObject g = Instantiate(prefabInputRebindUI, inputRebindsUIParent);
                 InputRebindUI inputRebindUI = g.GetComponentInChildren<InputRebindUI>();
                 if(inputRebindUI != null)
                 {
                     inputRebindUIs.Add(inputRebindUI);
 
-                    InputRebindUI.Content content = inputRebindUIContents.FirstOrDefault(x => x.inputActionNameReference == item.action.name && x.actionMapReference == item.action.actionMap.name);
 
                     inputRebindUI.Initialize(item, content);
                 }
