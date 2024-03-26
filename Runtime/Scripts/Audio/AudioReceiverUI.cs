@@ -18,12 +18,18 @@ namespace SLIDDES.UI
             SetupDictionary();
         }
 
+        /// <summary>
+        /// Here for enable toggle in inspector
+        /// </summary>
+        private void OnEnable() { }
+
         public void Receive(string audioEvent)
         {
             if(!isActiveAndEnabled) return;
 
             if(callbackDictionary.ContainsKey(audioEvent))
             {
+                if(showDebug) Debug.Log(audioEvent, this);
                 callbackDictionary[audioEvent]?.Invoke();
             }
             else
