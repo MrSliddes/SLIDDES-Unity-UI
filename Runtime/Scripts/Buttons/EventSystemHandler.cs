@@ -11,8 +11,15 @@ namespace SLIDDES.UI
     {
         public static GameObject SelectedGameObject { get; private set; }
 
+        /// <summary>
+        /// Here to show enable in inspector
+        /// </summary>
+        private void OnEnable() { }
+
         public void SetSelectedGameObject(GameObject selected)
         {
+            if(!enabled) return;
+
             SelectedGameObject = selected;
             if(EventSystem.current != null)
             {
@@ -22,6 +29,8 @@ namespace SLIDDES.UI
 
         public void UnsetSelectedGameObject()
         {
+            if(!enabled) return;
+
             if(EventSystem.current != null )
             {
                 EventSystem.current.SetSelectedGameObject(null);
@@ -33,6 +42,8 @@ namespace SLIDDES.UI
         /// </summary>
         public void SetMultiplayerEventSystemInputSolo()
         {
+            if(!enabled) return;
+
             InputManager.SetMultiplayerEventSystemInputSolo();
         }
 
@@ -41,6 +52,8 @@ namespace SLIDDES.UI
         /// </summary>
         public void SetMultiplayerEventSystemInputAll()
         {
+            if(!enabled) return;
+
             InputManager.SetMultiplayerEventSystemInputAll();
         }
     }
