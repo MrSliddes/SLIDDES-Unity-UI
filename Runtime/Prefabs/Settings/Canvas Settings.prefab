@@ -351,15 +351,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 4057452996723314154}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -385,14 +388,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -1323,15 +1329,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 4057452997396059214}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -1357,14 +1366,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -1693,15 +1705,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 4057452995976010407}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -1727,14 +1742,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -2053,15 +2071,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 4057452996249838736}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -2087,14 +2108,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -2338,15 +2362,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 4057452997408729111}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -2372,14 +2399,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -3568,15 +3598,18 @@ MonoBehaviour:
     procedural:
       targetGraphic: {fileID: 0}
       siblingTransform: {fileID: 0}
+      transformOnEnable: 1
       timeOnEnable: 0.25
       onEnableDelayBySiblingIndex: 0
       onEnableLocalPosition: {x: 0, y: 0, z: 0}
       onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
       onEnableLocalScale: {x: 1, y: 1, z: 1}
+      transformOnSelect: 1
       timeToSelect: 0.1
       selectLocalPosition: {x: 0, y: 0, z: 0}
       selectLocalEulerRotation: {x: 0, y: 0, z: 0}
       selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+      transformOnHover: 1
       transitionToHoverTime: 0.1
       hoveringLocalScaleAnimationCurve:
         serializedVersion: 2
@@ -3611,14 +3644,17 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+      transformOnDeselect: 1
       timeToDeselect: 0.1
       deselectLocalPosition: {x: 0, y: 0, z: 0}
       deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
       deselectLocalScale: {x: 1, y: 1, z: 1}
+      transformOnPointerDown: 1
       timePointerDown: 0.1
       pointerDownLocalPosition: {x: 0, y: 0, z: 0}
       pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
       pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+      transformOnPointerUp: 1
       timePointerUp: 0.2
       pointerUpLocalPosition: {x: 0, y: 0, z: 0}
       pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -3906,15 +3942,18 @@ MonoBehaviour:
     procedural:
       targetGraphic: {fileID: 0}
       siblingTransform: {fileID: 0}
+      transformOnEnable: 1
       timeOnEnable: 0.25
       onEnableDelayBySiblingIndex: 0
       onEnableLocalPosition: {x: 0, y: 0, z: 0}
       onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
       onEnableLocalScale: {x: 1, y: 1, z: 1}
+      transformOnSelect: 1
       timeToSelect: 0.1
       selectLocalPosition: {x: 0, y: 0, z: 0}
       selectLocalEulerRotation: {x: 0, y: 0, z: 0}
       selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+      transformOnHover: 1
       transitionToHoverTime: 0.1
       hoveringLocalScaleAnimationCurve:
         serializedVersion: 2
@@ -3949,14 +3988,17 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+      transformOnDeselect: 1
       timeToDeselect: 0.1
       deselectLocalPosition: {x: 0, y: 0, z: 0}
       deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
       deselectLocalScale: {x: 1, y: 1, z: 1}
+      transformOnPointerDown: 1
       timePointerDown: 0.1
       pointerDownLocalPosition: {x: 0, y: 0, z: 0}
       pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
       pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+      transformOnPointerUp: 1
       timePointerUp: 0.2
       pointerUpLocalPosition: {x: 0, y: 0, z: 0}
       pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -4171,7 +4213,19 @@ MonoBehaviour:
         m_CallState: 2
   onToggle:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4057452995969239063}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   externalEnabled: 1
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
@@ -4381,7 +4435,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4057452995969239064}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1721b2de30678944ebb3e76becd61271, type: 3}
   m_Name: 
@@ -4665,15 +4719,18 @@ MonoBehaviour:
     procedural:
       targetGraphic: {fileID: 0}
       siblingTransform: {fileID: 0}
+      transformOnEnable: 1
       timeOnEnable: 0.25
       onEnableDelayBySiblingIndex: 0
       onEnableLocalPosition: {x: 0, y: 0, z: 0}
       onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
       onEnableLocalScale: {x: 1, y: 1, z: 1}
+      transformOnSelect: 1
       timeToSelect: 0.1
       selectLocalPosition: {x: 0, y: 0, z: 0}
       selectLocalEulerRotation: {x: 0, y: 0, z: 0}
       selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+      transformOnHover: 1
       transitionToHoverTime: 0.1
       hoveringLocalScaleAnimationCurve:
         serializedVersion: 2
@@ -4708,14 +4765,17 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+      transformOnDeselect: 1
       timeToDeselect: 0.1
       deselectLocalPosition: {x: 0, y: 0, z: 0}
       deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
       deselectLocalScale: {x: 1, y: 1, z: 1}
+      transformOnPointerDown: 1
       timePointerDown: 0.1
       pointerDownLocalPosition: {x: 0, y: 0, z: 0}
       pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
       pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+      transformOnPointerUp: 1
       timePointerUp: 0.2
       pointerUpLocalPosition: {x: 0, y: 0, z: 0}
       pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -5698,15 +5758,18 @@ MonoBehaviour:
     procedural:
       targetGraphic: {fileID: 0}
       siblingTransform: {fileID: 0}
+      transformOnEnable: 1
       timeOnEnable: 0.25
       onEnableDelayBySiblingIndex: 0
       onEnableLocalPosition: {x: 0, y: 0, z: 0}
       onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
       onEnableLocalScale: {x: 1, y: 1, z: 1}
+      transformOnSelect: 1
       timeToSelect: 0.1
       selectLocalPosition: {x: 0, y: 0, z: 0}
       selectLocalEulerRotation: {x: 0, y: 0, z: 0}
       selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+      transformOnHover: 1
       transitionToHoverTime: 0.1
       hoveringLocalScaleAnimationCurve:
         serializedVersion: 2
@@ -5741,14 +5804,17 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+      transformOnDeselect: 1
       timeToDeselect: 0.1
       deselectLocalPosition: {x: 0, y: 0, z: 0}
       deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
       deselectLocalScale: {x: 1, y: 1, z: 1}
+      transformOnPointerDown: 1
       timePointerDown: 0.1
       pointerDownLocalPosition: {x: 0, y: 0, z: 0}
       pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
       pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+      transformOnPointerUp: 1
       timePointerUp: 0.2
       pointerUpLocalPosition: {x: 0, y: 0, z: 0}
       pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -5951,15 +6017,18 @@ MonoBehaviour:
     procedural:
       targetGraphic: {fileID: 0}
       siblingTransform: {fileID: 0}
+      transformOnEnable: 1
       timeOnEnable: 0.25
       onEnableDelayBySiblingIndex: 0
       onEnableLocalPosition: {x: 0, y: 0, z: 0}
       onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
       onEnableLocalScale: {x: 1, y: 1, z: 1}
+      transformOnSelect: 1
       timeToSelect: 0.1
       selectLocalPosition: {x: 0, y: 0, z: 0}
       selectLocalEulerRotation: {x: 0, y: 0, z: 0}
       selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+      transformOnHover: 1
       transitionToHoverTime: 0.1
       hoveringLocalScaleAnimationCurve:
         serializedVersion: 2
@@ -5994,14 +6063,17 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+      transformOnDeselect: 1
       timeToDeselect: 0.1
       deselectLocalPosition: {x: 0, y: 0, z: 0}
       deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
       deselectLocalScale: {x: 1, y: 1, z: 1}
+      transformOnPointerDown: 1
       timePointerDown: 0.1
       pointerDownLocalPosition: {x: 0, y: 0, z: 0}
       pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
       pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+      transformOnPointerUp: 1
       timePointerUp: 0.2
       pointerUpLocalPosition: {x: 0, y: 0, z: 0}
       pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -7250,6 +7322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setEventSystemSelectedOnGenerate: 0
+  generateOnlyInputRebindUIContents: 0
   inputRebindUIContents:
   - inputActionNameReference: Move Primary
     actionMapReference: SDS_Player
@@ -7737,15 +7810,18 @@ MonoBehaviour:
     procedural:
       targetGraphic: {fileID: 0}
       siblingTransform: {fileID: 0}
+      transformOnEnable: 1
       timeOnEnable: 0.25
       onEnableDelayBySiblingIndex: 0
       onEnableLocalPosition: {x: 0, y: 0, z: 0}
       onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
       onEnableLocalScale: {x: 1, y: 1, z: 1}
+      transformOnSelect: 1
       timeToSelect: 0.1
       selectLocalPosition: {x: 0, y: 0, z: 0}
       selectLocalEulerRotation: {x: 0, y: 0, z: 0}
       selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+      transformOnHover: 1
       transitionToHoverTime: 0.1
       hoveringLocalScaleAnimationCurve:
         serializedVersion: 2
@@ -7780,14 +7856,17 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+      transformOnDeselect: 1
       timeToDeselect: 0.1
       deselectLocalPosition: {x: 0, y: 0, z: 0}
       deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
       deselectLocalScale: {x: 1, y: 1, z: 1}
+      transformOnPointerDown: 1
       timePointerDown: 0.1
       pointerDownLocalPosition: {x: 0, y: 0, z: 0}
       pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
       pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+      transformOnPointerUp: 1
       timePointerUp: 0.2
       pointerUpLocalPosition: {x: 0, y: 0, z: 0}
       pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -7927,15 +8006,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 4057452996217847833}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 0
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -7970,14 +8052,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -9285,15 +9370,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 4057452996749205751}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -9319,14 +9407,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -10528,15 +10619,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 4057452997193048999}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 0
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -10571,14 +10665,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -11179,15 +11276,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 0}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -11222,14 +11322,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -12458,15 +12561,18 @@ MonoBehaviour:
     procedural:
       targetGraphic: {fileID: 0}
       siblingTransform: {fileID: 0}
+      transformOnEnable: 1
       timeOnEnable: 0.25
       onEnableDelayBySiblingIndex: 0
       onEnableLocalPosition: {x: 0, y: 0, z: 0}
       onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
       onEnableLocalScale: {x: 1, y: 1, z: 1}
+      transformOnSelect: 1
       timeToSelect: 0.1
       selectLocalPosition: {x: 0, y: 0, z: 0}
       selectLocalEulerRotation: {x: 0, y: 0, z: 0}
       selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+      transformOnHover: 1
       transitionToHoverTime: 0.1
       hoveringLocalScaleAnimationCurve:
         serializedVersion: 2
@@ -12501,14 +12607,17 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+      transformOnDeselect: 1
       timeToDeselect: 0.1
       deselectLocalPosition: {x: 0, y: 0, z: 0}
       deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
       deselectLocalScale: {x: 1, y: 1, z: 1}
+      transformOnPointerDown: 1
       timePointerDown: 0.1
       pointerDownLocalPosition: {x: 0, y: 0, z: 0}
       pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
       pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+      transformOnPointerUp: 1
       timePointerUp: 0.2
       pointerUpLocalPosition: {x: 0, y: 0, z: 0}
       pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -12775,15 +12884,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 4057452996197684527}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -12809,14 +12921,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -13524,15 +13639,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 4057452997271979403}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -13558,14 +13676,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -13859,15 +13980,18 @@ MonoBehaviour:
     procedural:
       targetGraphic: {fileID: 0}
       siblingTransform: {fileID: 0}
+      transformOnEnable: 1
       timeOnEnable: 0.25
       onEnableDelayBySiblingIndex: 0
       onEnableLocalPosition: {x: 0, y: 0, z: 0}
       onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
       onEnableLocalScale: {x: 1, y: 1, z: 1}
+      transformOnSelect: 1
       timeToSelect: 0.1
       selectLocalPosition: {x: 0, y: 0, z: 0}
       selectLocalEulerRotation: {x: 0, y: 0, z: 0}
       selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+      transformOnHover: 1
       transitionToHoverTime: 0.1
       hoveringLocalScaleAnimationCurve:
         serializedVersion: 2
@@ -13902,14 +14026,17 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+      transformOnDeselect: 1
       timeToDeselect: 0.1
       deselectLocalPosition: {x: 0, y: 0, z: 0}
       deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
       deselectLocalScale: {x: 1, y: 1, z: 1}
+      transformOnPointerDown: 1
       timePointerDown: 0.1
       pointerDownLocalPosition: {x: 0, y: 0, z: 0}
       pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
       pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+      transformOnPointerUp: 1
       timePointerUp: 0.2
       pointerUpLocalPosition: {x: 0, y: 0, z: 0}
       pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}

@@ -523,19 +523,19 @@ namespace SLIDDES.UI
 
             if(transitionType.HasFlag(Transition.Type.procedural))
             {
-                yield return new WaitForSeconds(transitionProcedural.TimePointerDown);
+                yield return new WaitForSecondsRealtime(transitionProcedural.TimePointerDown);
             }
             else if(transitionType.HasFlag(Transition.Type.color))
             {
-                yield return new WaitForSeconds(transitionColor.FadeDuration);
+                yield return new WaitForSecondsRealtime(transitionColor.FadeDuration);
             }
             else if(transitionType.HasFlag(Transition.Type.animation))
             {
-                yield return new WaitForSeconds(transitionAnimation.NormalizedTransitionDuration);
+                yield return new WaitForSecondsRealtime(transitionAnimation.NormalizedTransitionDuration);
             }
             else
             {
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSecondsRealtime(0.1f);
             }
 
             OnPointerUp(null);
@@ -545,7 +545,7 @@ namespace SLIDDES.UI
         
         private IEnumerator UnityEventDelayedAsync(UnityAction action, float delay)
         {
-            yield return new WaitForSeconds(delay);
+            yield return new WaitForSecondsRealtime(delay);
             action.Invoke();
         }
     }
