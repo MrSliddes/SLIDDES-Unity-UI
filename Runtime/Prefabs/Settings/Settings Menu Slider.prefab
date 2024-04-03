@@ -220,15 +220,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 5716862188226761417}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.1
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 300, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.01, y: 1.01, z: 1.01}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -254,14 +257,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.99, y: 0.99, z: 0.99}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -367,6 +373,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
   onMove:
@@ -1146,12 +1153,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   mode: 2
-  navigateUp: {fileID: 0}
+  navigateUp: {fileID: 5716862187782661599}
   selectOnDown: {fileID: 0}
   navigateLeft: {fileID: 0}
   navigateRight: {fileID: 0}
   selectOnUp: {fileID: 0}
-  navigateDown: {fileID: 0}
+  navigateDown: {fileID: 5716862187782661599}
   selectOnLeft: {fileID: 0}
   selectOnRight: {fileID: 0}
   navigateUpTriggerSubmit: 0
@@ -1168,15 +1175,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 0}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 1
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -1211,14 +1221,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -1324,6 +1337,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  inputPhaseCallbackIARM: 4
   inputActionReferenceMultiplayer:
     inputActionReference: {fileID: 0}
   onMove:

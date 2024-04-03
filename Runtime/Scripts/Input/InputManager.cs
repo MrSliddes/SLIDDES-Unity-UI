@@ -35,6 +35,19 @@ namespace SLIDDES.UI
                 }
             }
         }
+        public static bool HideCursorOnControllerInput
+        {
+            get
+            {
+                if(Instance == null) return false;
+                return Instance.hideCursorOnControllerInput;
+            }
+            set
+            {
+                if(Instance == null) return;
+                Instance.hideCursorOnControllerInput = value;
+            }
+        }
         public static string CurrentInputDeviceName
         {
             get
@@ -61,8 +74,16 @@ namespace SLIDDES.UI
                 if(value != lastPlayerInputPress)
                 {
                     lastPlayerInputPress = value;
+
                     if(Instance.showDebug) Debug.Log($"{debugPrefix} Last player that pressed input: {(lastPlayerInputPress != null ? lastPlayerInputPress.Index : "null")}");
+
                     if(lastPlayerInputPress != null && lastPlayerInputPress.CurrentInputDevice != null) Instance.SetCurrentInputDevice(lastPlayerInputPress.CurrentInputDevice.ToString());
+
+                    if(lastPlayerInputPress != null && Instance.hideCursorOnControllerInput)
+                    {                      
+                        Cursor.visible = CurrentInputDeviceName == InputDeviceNameKeyboard || CurrentInputDeviceName == InputDeviceNameMouse;
+                    }
+
                     OnLastPlayerInputPressChanged?.Invoke(value);
                 }
             }
@@ -114,6 +135,8 @@ namespace SLIDDES.UI
         [SerializeField] private bool loadAndSaveInput = true;
         [Tooltip("When a player gains control over the UI, set its corresponding player UI input module to the correct input")]
         [SerializeField] private bool autoSwitchPlayerUIInputModule = true;
+        [Tooltip("When a controller takes over input, hide the mouse cursor")]
+        [SerializeField] private bool hideCursorOnControllerInput = true;
         [Tooltip("When updating players, assign the player inputActionAsset. Set to false if using PlayerInputManager")]
         [SerializeField] private bool assignPlayerInputActionAsset;
         [SerializeField] private InputActionAsset inputActionAsset;

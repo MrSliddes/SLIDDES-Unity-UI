@@ -565,6 +565,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Menu System",
+                    "type": "Button",
+                    "id": "134a74e0-4fc1-4a27-9958-67f7dcd4592b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Fire",
                     "type": "Button",
                     "id": "3530e70a-9a4e-47ab-984b-3df0d3a914f0",
@@ -1157,6 +1166,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Lethal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7343015d-5e12-4844-81ba-dee7d31548e1",
+                    "path": "<Keyboard>/leftMeta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Menu System",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ab2d346-688b-4b2c-ae0d-aa3f6f31acce",
+                    "path": "<Gamepad>/systemButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Menu System",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
