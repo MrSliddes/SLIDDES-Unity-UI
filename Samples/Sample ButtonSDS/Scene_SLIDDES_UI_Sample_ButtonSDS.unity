@@ -900,15 +900,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 1573680579}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 0
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -943,14 +946,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -1037,6 +1043,16 @@ MonoBehaviour:
     sortOrderHover: -1
     siblingIndexHover: -1
     onSelectSetScrollRectPosition: 0
+  transitionAudio:
+    connectToAudioReceiverUI: 1
+    audioReceiverUI: {fileID: 0}
+    audioEventOnEnable: onEnable
+    audioEventOnDisable: onDisable
+    audioEventEnter: enter
+    audioEventUpdate: update
+    audioEventExit: exit
+    audioEventPointerDown: pointerDown
+    audioEventPointerUp: pointerUp
   inputAction:
     m_Name: 
     m_Type: 0
@@ -1046,7 +1062,9 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  inputActionReference: {fileID: 0}
+  inputPhaseCallbackIARM: 4
+  inputActionReferenceMultiplayer:
+    inputActionReference: {fileID: 0}
   onMove:
     m_PersistentCalls:
       m_Calls: []
@@ -1193,15 +1211,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 841971228}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 0
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -1236,14 +1257,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -1330,6 +1354,16 @@ MonoBehaviour:
     sortOrderHover: -1
     siblingIndexHover: -1
     onSelectSetScrollRectPosition: 0
+  transitionAudio:
+    connectToAudioReceiverUI: 1
+    audioReceiverUI: {fileID: 0}
+    audioEventOnEnable: onEnable
+    audioEventOnDisable: onDisable
+    audioEventEnter: enter
+    audioEventUpdate: update
+    audioEventExit: exit
+    audioEventPointerDown: pointerDown
+    audioEventPointerUp: pointerUp
   inputAction:
     m_Name: 
     m_Type: 0
@@ -1339,7 +1373,9 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  inputActionReference: {fileID: 0}
+  inputPhaseCallbackIARM: 4
+  inputActionReferenceMultiplayer:
+    inputActionReference: {fileID: 0}
   onMove:
     m_PersistentCalls:
       m_Calls: []
@@ -2219,15 +2255,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 1232299835}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 0
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -2262,14 +2301,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -2356,6 +2398,16 @@ MonoBehaviour:
     sortOrderHover: 2
     siblingIndexHover: -1
     onSelectSetScrollRectPosition: 0
+  transitionAudio:
+    connectToAudioReceiverUI: 1
+    audioReceiverUI: {fileID: 0}
+    audioEventOnEnable: onEnable
+    audioEventOnDisable: onDisable
+    audioEventEnter: enter
+    audioEventUpdate: update
+    audioEventExit: exit
+    audioEventPointerDown: pointerDown
+    audioEventPointerUp: pointerUp
   inputAction:
     m_Name: 
     m_Type: 0
@@ -2365,7 +2417,9 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  inputActionReference: {fileID: 0}
+  inputPhaseCallbackIARM: 4
+  inputActionReferenceMultiplayer:
+    inputActionReference: {fileID: 0}
   onMove:
     m_PersistentCalls:
       m_Calls: []
@@ -2931,15 +2985,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 0}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 0
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -2974,14 +3031,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -3068,6 +3128,16 @@ MonoBehaviour:
     sortOrderHover: 2
     siblingIndexHover: -1
     onSelectSetScrollRectPosition: 0
+  transitionAudio:
+    connectToAudioReceiverUI: 1
+    audioReceiverUI: {fileID: 0}
+    audioEventOnEnable: onEnable
+    audioEventOnDisable: onDisable
+    audioEventEnter: enter
+    audioEventUpdate: update
+    audioEventExit: exit
+    audioEventPointerDown: pointerDown
+    audioEventPointerUp: pointerUp
   inputAction:
     m_Name: Input
     m_Type: 0
@@ -3077,7 +3147,9 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  inputActionReference: {fileID: 6938515928263943320, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
+  inputPhaseCallbackIARM: 4
+  inputActionReferenceMultiplayer:
+    inputActionReference: {fileID: 0}
   onMove:
     m_PersistentCalls:
       m_Calls: []
@@ -3766,15 +3838,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 0}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 0
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -3809,14 +3884,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -3903,6 +3981,16 @@ MonoBehaviour:
     sortOrderHover: 2
     siblingIndexHover: -1
     onSelectSetScrollRectPosition: 0
+  transitionAudio:
+    connectToAudioReceiverUI: 1
+    audioReceiverUI: {fileID: 0}
+    audioEventOnEnable: onEnable
+    audioEventOnDisable: onDisable
+    audioEventEnter: enter
+    audioEventUpdate: update
+    audioEventExit: exit
+    audioEventPointerDown: pointerDown
+    audioEventPointerUp: pointerUp
   inputAction:
     m_Name: 
     m_Type: 0
@@ -3912,7 +4000,9 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  inputActionReference: {fileID: 0}
+  inputPhaseCallbackIARM: 4
+  inputActionReferenceMultiplayer:
+    inputActionReference: {fileID: 0}
   onMove:
     m_PersistentCalls:
       m_Calls: []
@@ -4614,15 +4704,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 0}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 0
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -4657,14 +4750,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -4751,6 +4847,16 @@ MonoBehaviour:
     sortOrderHover: 2
     siblingIndexHover: -1
     onSelectSetScrollRectPosition: 0
+  transitionAudio:
+    connectToAudioReceiverUI: 1
+    audioReceiverUI: {fileID: 0}
+    audioEventOnEnable: onEnable
+    audioEventOnDisable: onDisable
+    audioEventEnter: enter
+    audioEventUpdate: update
+    audioEventExit: exit
+    audioEventPointerDown: pointerDown
+    audioEventPointerUp: pointerUp
   inputAction:
     m_Name: 
     m_Type: 0
@@ -4760,7 +4866,9 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  inputActionReference: {fileID: 0}
+  inputPhaseCallbackIARM: 4
+  inputActionReferenceMultiplayer:
+    inputActionReference: {fileID: 0}
   onMove:
     m_PersistentCalls:
       m_Calls: []
@@ -4808,6 +4916,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124266053}
   m_CullTransparentMesh: 1
+--- !u!1001 &1152324208
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713185, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831970439328713187, guid: 18576368ff1107346a7873d22093f396, type: 3}
+      propertyPath: m_Name
+      value: '[Input Manager]'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18576368ff1107346a7873d22093f396, type: 3}
 --- !u!1 &1154363710
 GameObject:
   m_ObjectHideFlags: 0
@@ -5200,106 +5365,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187462219}
   m_CullTransparentMesh: 1
---- !u!1 &1196310299
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1196310300}
-  - component: {fileID: 1196310301}
-  m_Layer: 5
-  m_Name: Action Test 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1196310300
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196310299}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1202753513}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1196310301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196310299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6887dd670c44fd4faf74fe6589422c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputActionReference: {fileID: -5388412242716429035, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
---- !u!1 &1196802038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1196802039}
-  - component: {fileID: 1196802040}
-  m_Layer: 5
-  m_Name: Action Test 0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1196802039
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196802038}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1202753513}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1196802040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196802038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6887dd670c44fd4faf74fe6589422c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputActionReference: {fileID: -5388412242716429035, guid: 3d9b3150c305d814a91613eeac4d3382, type: 3}
 --- !u!1 &1202753509
 GameObject:
   m_ObjectHideFlags: 0
@@ -5395,8 +5460,6 @@ RectTransform:
   - {fileID: 1354352651}
   - {fileID: 629292607}
   - {fileID: 229397615}
-  - {fileID: 1196802039}
-  - {fileID: 1196310300}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5680,15 +5743,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 1697053440}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 0
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -5723,14 +5789,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -5817,6 +5886,16 @@ MonoBehaviour:
     sortOrderHover: 2
     siblingIndexHover: -1
     onSelectSetScrollRectPosition: 0
+  transitionAudio:
+    connectToAudioReceiverUI: 1
+    audioReceiverUI: {fileID: 0}
+    audioEventOnEnable: onEnable
+    audioEventOnDisable: onDisable
+    audioEventEnter: enter
+    audioEventUpdate: update
+    audioEventExit: exit
+    audioEventPointerDown: pointerDown
+    audioEventPointerUp: pointerUp
   inputAction:
     m_Name: Input
     m_Type: 0
@@ -5834,7 +5913,9 @@ MonoBehaviour:
       m_Action: Input
       m_Flags: 0
     m_Flags: 0
-  inputActionReference: {fileID: 0}
+  inputPhaseCallbackIARM: 4
+  inputActionReferenceMultiplayer:
+    inputActionReference: {fileID: 0}
   onMove:
     m_PersistentCalls:
       m_Calls: []
@@ -7054,9 +7135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f13765bb3df44d343970f48a63a121e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onSelectedGameObjectChange:
-    m_PersistentCalls:
-      m_Calls: []
+  syncEventSystems: 1
+  multiplayerEventSystem: {fileID: 0}
 --- !u!1 &1694110665
 GameObject:
   m_ObjectHideFlags: 0
@@ -7114,15 +7194,18 @@ MonoBehaviour:
   transitionProcedural:
     targetGraphic: {fileID: 766263235}
     siblingTransform: {fileID: 0}
+    transformOnEnable: 1
     timeOnEnable: 0.25
     onEnableDelayBySiblingIndex: 0
     onEnableLocalPosition: {x: 0, y: 0, z: 0}
     onEnableLocalEulerRotation: {x: 0, y: 0, z: 0}
     onEnableLocalScale: {x: 1, y: 1, z: 1}
+    transformOnSelect: 1
     timeToSelect: 0.1
     selectLocalPosition: {x: 0, y: 0, z: 0}
     selectLocalEulerRotation: {x: 0, y: 0, z: 0}
     selectLocalScale: {x: 1.1, y: 1.1, z: 1.1}
+    transformOnHover: 1
     transitionToHoverTime: 0.1
     hoveringLocalScaleAnimationCurve:
       serializedVersion: 2
@@ -7157,14 +7240,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    transformOnDeselect: 1
     timeToDeselect: 0.1
     deselectLocalPosition: {x: 0, y: 0, z: 0}
     deselectLocalEulerRotation: {x: 0, y: 0, z: 0}
     deselectLocalScale: {x: 1, y: 1, z: 1}
+    transformOnPointerDown: 1
     timePointerDown: 0.1
     pointerDownLocalPosition: {x: 0, y: 0, z: 0}
     pointerDownLocalEulerRotation: {x: 0, y: 0, z: 0}
     pointerDownLocalScale: {x: 0.8, y: 0.8, z: 0.8}
+    transformOnPointerUp: 1
     timePointerUp: 0.2
     pointerUpLocalPosition: {x: 0, y: 0, z: 0}
     pointerUpLocalEulerRotation: {x: 0, y: 0, z: 0}
@@ -7251,6 +7337,16 @@ MonoBehaviour:
     sortOrderHover: -1
     siblingIndexHover: -1
     onSelectSetScrollRectPosition: 0
+  transitionAudio:
+    connectToAudioReceiverUI: 1
+    audioReceiverUI: {fileID: 0}
+    audioEventOnEnable: onEnable
+    audioEventOnDisable: onDisable
+    audioEventEnter: enter
+    audioEventUpdate: update
+    audioEventExit: exit
+    audioEventPointerDown: pointerDown
+    audioEventPointerUp: pointerUp
   inputAction:
     m_Name: 
     m_Type: 0
@@ -7260,7 +7356,9 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  inputActionReference: {fileID: 0}
+  inputPhaseCallbackIARM: 4
+  inputActionReferenceMultiplayer:
+    inputActionReference: {fileID: 0}
   onMove:
     m_PersistentCalls:
       m_Calls: []

@@ -63,7 +63,7 @@ namespace SLIDDES.UI
                     lastPlayerInputPress = value;
                     if(Instance.showDebug) Debug.Log($"{debugPrefix} Last player that pressed input: {(lastPlayerInputPress != null ? lastPlayerInputPress.Index : "null")}");
                     if(lastPlayerInputPress != null && lastPlayerInputPress.CurrentInputDevice != null) Instance.SetCurrentInputDevice(lastPlayerInputPress.CurrentInputDevice.ToString());
-                    OnLastPlayerInputPressChanged.Invoke(value);
+                    OnLastPlayerInputPressChanged?.Invoke(value);
                 }
             }
         }
