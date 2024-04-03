@@ -274,6 +274,13 @@ namespace SLIDDES.UI
         {
             base.OnDisable();
 
+            if(coroutineAwaitTimeBetweenPress != null)
+            {
+                StopCoroutine(coroutineAwaitTimeBetweenPress);
+                AwaitingPressedTime = false;
+                allowedUpAfterPress = true;
+            }
+
             if(inputAction != null)
             {
                 inputAction.canceled -= actionExternalSubmit;
