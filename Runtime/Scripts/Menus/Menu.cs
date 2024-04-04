@@ -38,6 +38,10 @@ namespace SLIDDES.UI.Menus
         [SerializeField] private bool closeOnStart;
         [Tooltip("When this menu gets opend all children are set active and vice versa")]
         [SerializeField] private bool toggleChildren;
+        [Tooltip("Can this menu be opened when already opened?")]
+        [SerializeField] private bool canOpenWhenOpened;
+        [Tooltip("Can this menu be closed when already closed?")]
+        [SerializeField] private bool canCloseWhenClosed;
         [Tooltip("Delay opening the menu when Open() is called")]
         [SerializeField] private float openDelay;
         [Tooltip("Delaying closing the menu when Close() is called")]
@@ -63,7 +67,6 @@ namespace SLIDDES.UI.Menus
         /// Is the menu closed
         /// </summary>
         private bool isClosed;
-        private float gameSpeedBeforePause;
         private Coroutine coroutineOpen;
         private Coroutine coroutineClose;
 
@@ -104,6 +107,8 @@ namespace SLIDDES.UI.Menus
         /// </summary>
         public void Close()
         {
+            if(!canCloseWhenClosed && IsClosed) return;
+
             if(isActiveAndEnabled)
             {
                 if(coroutineOpen != null) StopCoroutine(coroutineOpen);
@@ -118,6 +123,8 @@ namespace SLIDDES.UI.Menus
         /// </summary>
         public void Open()
         {
+            if(!canOpenWhenOpened && !IsClosed) return;
+
             if(isActiveAndEnabled)
             { 
                 if(coroutineClose != null) StopCoroutine(coroutineClose);

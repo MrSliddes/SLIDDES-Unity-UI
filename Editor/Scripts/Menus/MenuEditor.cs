@@ -10,6 +10,8 @@ namespace SLIDDES.UI.Menus.Editor
     {
         private SerializedProperty propertyCloseOnStart;
         private SerializedProperty propertyToggleChildren;
+        private SerializedProperty propertyCanOpenWhenOpened;
+        private SerializedProperty propertyCanCloseWhenClosed;
         private SerializedProperty propertyOpenDelay;
         private SerializedProperty propertyCloseDelay;
 
@@ -17,6 +19,7 @@ namespace SLIDDES.UI.Menus.Editor
 
         private SerializedProperty propertyOnPreOpen;
         private SerializedProperty propertyOnOpen;
+        private SerializedProperty propertyOnPreClose;
         private SerializedProperty propertyOnClose;
         private SerializedProperty propertyOnToggle;
 
@@ -30,6 +33,8 @@ namespace SLIDDES.UI.Menus.Editor
         {
             propertyCloseOnStart = serializedObject.FindProperty("closeOnStart");
             propertyToggleChildren = serializedObject.FindProperty("toggleChildren");
+            propertyCanOpenWhenOpened = serializedObject.FindProperty("canOpenWhenOpened");
+            propertyCanCloseWhenClosed = serializedObject.FindProperty("canCloseWhenClosed");
             propertyOpenDelay = serializedObject.FindProperty("openDelay");
             propertyCloseDelay = serializedObject.FindProperty("closeDelay");
 
@@ -37,6 +42,7 @@ namespace SLIDDES.UI.Menus.Editor
 
             propertyOnPreOpen = serializedObject.FindProperty("onPreOpen");
             propertyOnOpen = serializedObject.FindProperty("onOpen");
+            propertyOnPreClose = serializedObject.FindProperty("onPreClose");
             propertyOnClose = serializedObject.FindProperty("onClose");
             propertyOnToggle = serializedObject.FindProperty("onToggle");
 
@@ -50,6 +56,8 @@ namespace SLIDDES.UI.Menus.Editor
 
             EditorGUILayout.PropertyField(propertyCloseOnStart);
             EditorGUILayout.PropertyField(propertyToggleChildren);
+            EditorGUILayout.PropertyField(propertyCanOpenWhenOpened);
+            EditorGUILayout.PropertyField(propertyCanCloseWhenClosed);
             EditorGUILayout.PropertyField(propertyOpenDelay);
             EditorGUILayout.PropertyField(propertyCloseDelay);
 
@@ -62,6 +70,7 @@ namespace SLIDDES.UI.Menus.Editor
 
                 EditorGUILayout.PropertyField(propertyOnPreOpen);
                 EditorGUILayout.PropertyField(propertyOnOpen);
+                EditorGUILayout.PropertyField(propertyOnPreClose);
                 EditorGUILayout.PropertyField(propertyOnClose);
                 EditorGUILayout.PropertyField(propertyOnToggle);
 
