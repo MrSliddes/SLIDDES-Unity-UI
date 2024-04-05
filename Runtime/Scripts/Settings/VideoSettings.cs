@@ -157,30 +157,40 @@ public class VideoSettings : MonoBehaviour
     {
         Screen.fullScreenMode = cachedFullScreenMode;
         PlayerPrefs.SetInt(GetPlayerPrefKey("fullScreenMode"), (int)cachedFullScreenMode);
+
+        if(showDebug) Debug.Log($"{debugPrefix} Apply fullscreen mode {cachedFullScreenMode}");
     }
 
     public void ApplyScreenResolution()
     {
         Screen.SetResolution(cachedScreenResolution.width, cachedScreenResolution.height, cachedFullScreenMode);
         PlayerPrefs.SetInt(GetPlayerPrefKey("screenResolution"), screenResolutionIndex);
+
+        if(showDebug) Debug.Log($"{debugPrefix} Apply Screen Resolution: {cachedScreenResolution} with index: {screenResolutionIndex}");
     }
 
     public void ApplyTargetFrameRate()
     {
         Application.targetFrameRate = cachedTargetFrameRate;
         PlayerPrefs.SetInt(GetPlayerPrefKey("targetFrameRate"), cachedTargetFrameRate);
+
+        if(showDebug) Debug.Log($"{debugPrefix} Apply Target Frame Rate: {cachedTargetFrameRate}");
     }
 
     public void ApplyVsync()
     {
         QualitySettings.vSyncCount = cachedVSync;
         PlayerPrefs.SetInt(GetPlayerPrefKey("vSync"), cachedVSync);
+
+        if(showDebug) Debug.Log($"{debugPrefix} Apply vSync: {cachedVSync}");
     }
 
     public void ApplyQualitySettings()
     {
         QualitySettings.SetQualityLevel(cachedQualitySettings, true);
         PlayerPrefs.SetInt(GetPlayerPrefKey("qualitySettings"), cachedQualitySettings);
+
+        if(showDebug) Debug.Log($"{debugPrefix} Apply QualitySettings: {cachedQualitySettings}");
     }
 
     #endregion

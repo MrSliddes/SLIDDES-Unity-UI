@@ -45,5 +45,10 @@ namespace SLIDDES.UI
         {
             iarm.Disable();
         }
+
+        private void OnDestroy()
+        {
+            iarm.Disable();
+        }
     }
 }

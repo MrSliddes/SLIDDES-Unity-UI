@@ -2612,7 +2612,19 @@ MonoBehaviour:
         m_CallState: 2
   onConfirm:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4057452997362777282}
+        m_TargetAssemblyTypeName: SLIDDES.UI.UnappliedChangesUI, SLIDDES.UI
+        m_MethodName: LostChanges
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   confirmPrompt: {fileID: 4057452996528305711}
 --- !u!1 &4057452995738266973
 GameObject:
@@ -3896,6 +3908,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeOnStart: 1
   toggleChildren: 1
+  canOpenWhenOpened: 0
+  canCloseWhenClosed: 0
   openDelay: 0.5
   closeDelay: 0
   transitions:
@@ -4704,6 +4718,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeOnStart: 1
   toggleChildren: 1
+  canOpenWhenOpened: 0
+  canCloseWhenClosed: 0
   openDelay: 0
   closeDelay: 0
   transitions:
@@ -5743,6 +5759,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeOnStart: 0
   toggleChildren: 1
+  canOpenWhenOpened: 0
+  canCloseWhenClosed: 0
   openDelay: 0
   closeDelay: 0
   transitions:
@@ -6002,6 +6020,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeOnStart: 1
   toggleChildren: 1
+  canOpenWhenOpened: 0
+  canCloseWhenClosed: 0
   openDelay: 0
   closeDelay: 0
   transitions:
@@ -12547,6 +12567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeOnStart: 1
   toggleChildren: 1
+  canOpenWhenOpened: 0
+  canCloseWhenClosed: 0
   openDelay: 0
   closeDelay: 0
   transitions:
