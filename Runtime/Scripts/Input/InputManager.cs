@@ -455,6 +455,16 @@ namespace SLIDDES.UI
                 if(player == null || player.PlayerInput == null) continue;
                 if(!player.PlayerInput.inputIsActive || !player.PlayerInput.isActiveAndEnabled) continue;
                 player.PlayerInput.SwitchCurrentActionMap(mapNameOrID);
+
+                // Some sort of unity bug
+                // https://forum.unity.com/threads/solved-error-while-switching-between-action-maps.825204/
+                // So this is a temp fix for it
+                if(player.PlayerInput.uiInputModule != null)
+                {
+                    player.PlayerInput.uiInputModule.enabled = false;
+                    player.PlayerInput.uiInputModule.enabled = true;
+                }
+
                 if(Instance.showDebug) Debug.Log($"{debugPrefix} Set player {player.Index} action map to {mapNameOrID}");
             }
         }
