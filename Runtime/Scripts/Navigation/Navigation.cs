@@ -156,8 +156,6 @@ namespace SLIDDES.UI
 
         public UnityEvent<bool> onInteractable;
 
-        private bool onEnabledCalled;
-        protected int navigationsIndex;
         protected static Navigation[] navigations = new Navigation[10];
         protected static int navigationsCount = 0;
         private static Navigation[] AllActiveNavigation
@@ -170,12 +168,17 @@ namespace SLIDDES.UI
             }
         }
 
+        private bool onEnabledCalled;
+        protected int navigationsIndex;
+        protected Canvas canvas;
+
         protected override void OnEnable()
         {
             base.OnEnable();
             if(!onEnabledCalled)
             {
                 AddToNavigations();
+                if(canvas == null) canvas = GetComponentInParent<Canvas>();
                 onEnabledCalled = true;
             }
         }
@@ -320,8 +323,7 @@ namespace SLIDDES.UI
         /// <returns></returns>
         public Navigation FindNavigation(Vector3 dir)
         {
-
-            // THIS ALGORITIM IS GARBAGE AND NEEDS TO BE REPLACED!!!
+            // TODO THIS UNITY ALGORITIM IS GARBAGE AND NEEDS TO BE REPLACED!!!
 
             dir = dir.normalized;
             Vector3 localDir = Quaternion.Inverse(transform.rotation) * dir;
@@ -339,6 +341,9 @@ namespace SLIDDES.UI
             for(int i = 0; i < navigationsCount; ++i)
             {
                 Navigation nav = navigations[i];
+
+                // Dont navigate to another canvas
+                if(nav.canvas != canvas) continue;
 
                 if(nav == this) continue;
                 if(!nav.Interactable || nav.mode == Mode.None) continue;
