@@ -11,6 +11,21 @@ namespace SLIDDES.UI
     {
         public static GameObject SelectedGameObject { get; private set; }
 
+        public EventSystem EventSystem
+        {
+            get
+            {
+                if(eventSystem != null) return eventSystem;
+                return EventSystem.current;
+            }
+            set
+            {
+                eventSystem = value;
+            }
+        }
+
+        private EventSystem eventSystem;
+
         /// <summary>
         /// Here to show enable in inspector
         /// </summary>
@@ -21,9 +36,10 @@ namespace SLIDDES.UI
             if(!enabled) return;
 
             SelectedGameObject = selected;
-            if(EventSystem.current != null)
+
+            if(EventSystem != null)
             {
-                EventSystem.current.SetSelectedGameObject(selected);
+                EventSystem.SetSelectedGameObject(selected);
             }
         }
 
@@ -31,9 +47,9 @@ namespace SLIDDES.UI
         {
             if(!enabled) return;
 
-            if(EventSystem.current != null )
+            if(EventSystem != null )
             {
-                EventSystem.current.SetSelectedGameObject(null);
+                EventSystem.SetSelectedGameObject(null);
             }
         }
 
@@ -55,6 +71,20 @@ namespace SLIDDES.UI
             if(!enabled) return;
 
             InputManager.SetMultiplayerEventSystemInputAll();
+        }
+
+        /// <summary>
+        /// Set this handlers event system
+        /// </summary>
+        /// <param name="gameObject"></param>
+        public void SetEventSystemHandlerEventSystem(GameObject gameObject)
+        {
+            if (gameObject == null)
+            {
+                eventSystem = null;
+                return;
+            }
+            eventSystem = gameObject.GetComponent<EventSystem>();
         }
     }
 }
