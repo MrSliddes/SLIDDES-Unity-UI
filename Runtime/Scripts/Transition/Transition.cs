@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace SLIDDES.UI
 {
@@ -10,6 +11,19 @@ namespace SLIDDES.UI
     /// </summary>
     public abstract class Transition
     {
+        public bool IsHovering
+        {
+            get
+            {
+                return state switch
+                {
+                    State.onEnable => false,
+                    State.exit => false,
+                    _ => true,
+                };
+            }
+        }
+
         protected State state = State.exit;
 
         protected float transitionTimer;
@@ -104,6 +118,11 @@ namespace SLIDDES.UI
         protected virtual IEnumerator PointerUpAsync()
         {
             yield break;
+        }
+
+        public virtual void PointerMove(PointerEventData eventData)
+        {
+
         }
 
         public enum State

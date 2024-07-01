@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace SLIDDES.UI
@@ -16,8 +17,8 @@ namespace SLIDDES.UI
                 return targetGraphic;
             }
             set
-            { 
-                targetGraphic = value; 
+            {
+                targetGraphic = value;
             }
         }
 
@@ -66,9 +67,18 @@ namespace SLIDDES.UI
         [SerializeField] private Vector3 pointerUpLocalScale = new Vector3(1f, 1f, 1f);
         [SerializeField] private AnimationCurve pointerUpLocalScaleAnimationCurve = new AnimationCurve(new Keyframe[] { new Keyframe(0, 1f), new Keyframe(0.5f, 1.5f), new Keyframe(1, 1f) });
 
+        [Header("Tilt")]
+        [SerializeField] private bool useTilt;
+        [SerializeField] private float tiltSpeed = 1;
+        [SerializeField] private float tiltAmountManual = 1;
+        [SerializeField] private float tiltAmountAutomatic = 1;
+        [SerializeField] private float tiltScaleManual = 0.2f;
+        [SerializeField] private float tiltScaleAutomatic = 1;
+
         private Vector3 interruptedLocalPosition;
         private Vector3 interruptedLocalEulerRotation;
         private Vector3 interruptedLocalScale;
+        private Vector3 pointerPosition;
 
         public override void Initialize(MonoBehaviour monoBehaviour, params object[] objects)
         {
@@ -138,20 +148,25 @@ namespace SLIDDES.UI
             transitionTimer = 0;
             interruptedLocalScale = targetGraphic.transform.localScale;
 
-            if(transformOnHover)
-            {
-                while(transitionTimer < transitionToHoverTime)
-                {
-                    yield return null;
-                    float t = transitionTimer / transitionToHoverTime;
-                    transitionTimer += Time.unscaledDeltaTime;
-                    targetGraphic.transform.localScale = Vector3.Lerp(interruptedLocalScale, hoveringLocalScaleAnimationCurve.Evaluate(0) * Vector3.one, t);
-                }
-                transitionTimer = 0;
+            bool transitionedToHover = false;
 
-                while(true)
+            while(transformOnHover || useTilt)
+            {
+                if(transformOnHover)
                 {
-                    yield return null;
+                    if(!transitionedToHover)
+                    {
+                        while(transitionTimer < transitionToHoverTime)
+                        {
+                            yield return null;
+                            float t = transitionTimer / transitionToHoverTime;
+                            transitionTimer += Time.unscaledDeltaTime;
+                            targetGraphic.transform.localScale = Vector3.Lerp(interruptedLocalScale, hoveringLocalScaleAnimationCurve.Evaluate(0) * Vector3.one, t);
+                        }
+                        transitionTimer = 0;
+                        transitionedToHover = true;
+                    }
+
                     targetGraphic.transform.localScale = Vector3.one * hoveringLocalScaleAnimationCurve.Evaluate(transitionTimer);
                     transitionTimer += Time.unscaledDeltaTime;
                     if(transitionTimer > hoveringLocalScaleAnimationCurve[hoveringLocalScaleAnimationCurve.length - 1].time)
@@ -159,11 +174,23 @@ namespace SLIDDES.UI
                         transitionTimer = 0;
                     }
                 }
+
+                if(useTilt)
+                {
+                    UpdateTilt();
+                }
+
+                yield return null;
             }
         }
 
         protected override IEnumerator ExitAsync()
         {
+            if(useTilt) // TODO - make sure this just lerps well instead of zeroing it
+            {
+                targetGraphic.transform.localEulerAngles = Vector3.zero;
+            }
+
             interruptedLocalPosition = targetGraphic.transform.localPosition;
             interruptedLocalEulerRotation = targetGraphic.transform.localEulerAngles;
             interruptedLocalScale = targetGraphic.transform.localScale;
@@ -193,6 +220,11 @@ namespace SLIDDES.UI
 
         public override void PointerDown()
         {
+            if(useTilt) // TODO - make sure this just lerps well instead of zeroing it
+            {
+                targetGraphic.transform.localEulerAngles = Vector3.zero;
+            }
+
             interruptedLocalPosition = targetGraphic.transform.localPosition;
             interruptedLocalEulerRotation = targetGraphic.transform.localEulerAngles;
             interruptedLocalScale = targetGraphic.transform.localScale;
@@ -258,6 +290,32 @@ namespace SLIDDES.UI
             transitionTimer = 0;
             Update();
             yield break;
+        }
+
+        public override void PointerMove(PointerEventData eventData)
+        {
+            base.PointerMove(eventData);
+            pointerPosition = eventData.position;
+        }
+
+        private void UpdateTilt()
+        {
+            if(!useTilt) return;
+            if(state == State.pointerDown || state == State.pointerUp) return;
+
+            float sine = Mathf.Sin(Time.time) * (IsHovering ? tiltScaleManual : tiltScaleAutomatic);
+            float cosine = Mathf.Cos(Time.time) * (IsHovering ? tiltScaleManual : tiltScaleAutomatic);
+
+            Vector3 offset = targetGraphic.transform.position - pointerPosition;
+            float tiltX = IsHovering ? ((offset.y * -1) * tiltAmountManual) : 0;
+            float tiltY = IsHovering ? ((offset.x) * tiltAmountManual) : 0;
+            float tiltZ = targetGraphic.transform.eulerAngles.z;
+
+            float lerpX = Mathf.LerpAngle(targetGraphic.transform.eulerAngles.x, tiltX + (sine * tiltAmountAutomatic), tiltSpeed * Time.deltaTime);
+            float lerpY = Mathf.LerpAngle(targetGraphic.transform.eulerAngles.y, tiltY + (cosine * tiltAmountAutomatic), tiltSpeed * Time.deltaTime);
+            //float lerpZ = Mathf.LerpAngle(targetGraphic.transform.eulerAngles.z, tiltZ, tiltSpeed / 2 * Time.deltaTime);
+
+            targetGraphic.transform.eulerAngles = new Vector3(lerpX, lerpY, 0);
         }
     }
 

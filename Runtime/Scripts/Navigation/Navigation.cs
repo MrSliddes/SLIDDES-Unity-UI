@@ -17,7 +17,7 @@ namespace SLIDDES.UI
         IMoveHandler,
         IPointerClickHandler,
         IPointerDownHandler, IPointerUpHandler,
-        IPointerEnterHandler, IPointerExitHandler,
+        IPointerEnterHandler, IPointerMoveHandler, IPointerExitHandler,
         ISelectHandler, IDeselectHandler,
         ISubmitHandler
     {
@@ -572,6 +572,11 @@ namespace SLIDDES.UI
             OnActionEnter?.Invoke();
         }
 
+        protected virtual void OnPointerMove(PointerEventData eventData)
+        {
+
+        }
+
         protected virtual void OnPointerExit(PointerEventData eventData)
         {
 
@@ -631,6 +636,12 @@ namespace SLIDDES.UI
         {
             if(!Interactable) return;
             OnPointerEnter(eventData);
+        }
+
+        void IPointerMoveHandler.OnPointerMove(PointerEventData eventData)
+        {
+            if(!Interactable) return;
+            OnPointerMove(eventData);
         }
 
         void IPointerExitHandler.OnPointerExit(PointerEventData eventData)

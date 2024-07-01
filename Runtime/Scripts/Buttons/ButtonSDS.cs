@@ -431,6 +431,15 @@ namespace SLIDDES.UI
             UnityEventDelayed(() => onPointerEnter?.Invoke(eventData), eventDelayOnPointerEnter);
         }
 
+        protected override void OnPointerMove(PointerEventData eventData)
+        {
+            base.OnPointerMove(eventData);
+            foreach(Transition transition in transitions)
+            {
+                transition.PointerMove(eventData);
+            }
+        }
+
         protected override void OnPointerExit(PointerEventData eventData)
         {
             base.OnPointerExit(eventData);
