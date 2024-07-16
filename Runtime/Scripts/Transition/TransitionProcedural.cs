@@ -23,6 +23,7 @@ namespace SLIDDES.UI
         }
 
         [SerializeField] private Graphic targetGraphic;
+        [SerializeField] private Transform parentTransform;
         [SerializeField] private Transform siblingTransform;
 
         [Header("OnEnable")]
@@ -75,6 +76,12 @@ namespace SLIDDES.UI
         [SerializeField] private float tiltScaleManual = 0.2f;
         [SerializeField] private float tiltScaleAutomatic = 1;
 
+        // TODO - positioning curve
+
+        [SerializeField] private bool useTiltZRotation; // TODO - use an SO asset for this so its easy tweakable?
+        [SerializeField] private AnimationCurve tiltZRotationCurve = new AnimationCurve(new Keyframe[] { new Keyframe(0, 1), new Keyframe(1, -1) });
+        [SerializeField] private float tiltZRotationInfluence = 5f;
+
         private Vector3 interruptedLocalPosition;
         private Vector3 interruptedLocalEulerRotation;
         private Vector3 interruptedLocalScale;
@@ -83,11 +90,14 @@ namespace SLIDDES.UI
         public override void Initialize(MonoBehaviour monoBehaviour, params object[] objects)
         {
             base.Initialize(monoBehaviour, objects);
+            if(parentTransform == null) parentTransform = monoBehaviour.transform.parent;
             if(siblingTransform == null) siblingTransform = monoBehaviour.transform;
         }
 
         protected override IEnumerator OnEnableAsync()
         {
+            pointerPosition = targetGraphic.transform.position;
+
             if(onEnableDelayBySiblingIndex)
             {
                 int index = Mathf.Clamp(siblingTransform.GetSiblingIndex(), 1, 99);
@@ -114,7 +124,15 @@ namespace SLIDDES.UI
             }
 
             transitionTimer = 0;
-            yield break;
+
+            while(true)
+            {
+                if(useTilt)
+                {
+                    UpdateTilt();
+                }
+                yield return null;
+            }
         }
 
         protected override IEnumerator EnterAsync()
@@ -215,7 +233,15 @@ namespace SLIDDES.UI
             }
 
             transitionTimer = 0;
-            yield break;
+
+            while(true)
+            {
+                if(useTilt)
+                {
+                    UpdateTilt();
+                }
+                yield return null;
+            }
         }
 
         public override void PointerDown()
@@ -309,13 +335,13 @@ namespace SLIDDES.UI
             Vector3 offset = targetGraphic.transform.position - pointerPosition;
             float tiltX = IsHovering ? ((offset.y * -1) * tiltAmountManual) : 0;
             float tiltY = IsHovering ? ((offset.x) * tiltAmountManual) : 0;
-            float tiltZ = targetGraphic.transform.eulerAngles.z;
+            float tiltZ = useTiltZRotation ? tiltZRotationInfluence * parentTransform.childCount * tiltZRotationCurve.Evaluate(monoBehaviour.transform.GetSiblingIndex() / ((float)parentTransform.childCount - 1)) : targetGraphic.transform.eulerAngles.z;
 
             float lerpX = Mathf.LerpAngle(targetGraphic.transform.eulerAngles.x, tiltX + (sine * tiltAmountAutomatic), tiltSpeed * Time.deltaTime);
             float lerpY = Mathf.LerpAngle(targetGraphic.transform.eulerAngles.y, tiltY + (cosine * tiltAmountAutomatic), tiltSpeed * Time.deltaTime);
-            //float lerpZ = Mathf.LerpAngle(targetGraphic.transform.eulerAngles.z, tiltZ, tiltSpeed / 2 * Time.deltaTime);
+            float lerpZ = Mathf.LerpAngle(targetGraphic.transform.eulerAngles.z, tiltZ, tiltSpeed / 2 * Time.deltaTime);
 
-            targetGraphic.transform.eulerAngles = new Vector3(lerpX, lerpY, 0);
+            targetGraphic.transform.eulerAngles = new Vector3(lerpX, lerpY, lerpZ);
         }
     }
 
