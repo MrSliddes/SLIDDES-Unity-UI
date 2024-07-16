@@ -96,8 +96,6 @@ namespace SLIDDES.UI
 
         protected override IEnumerator OnEnableAsync()
         {
-            pointerPosition = targetGraphic.transform.position;
-
             if(onEnableDelayBySiblingIndex)
             {
                 int index = Mathf.Clamp(siblingTransform.GetSiblingIndex(), 1, 99);
@@ -233,6 +231,7 @@ namespace SLIDDES.UI
             }
 
             transitionTimer = 0;
+            pointerPosition = Vector3.zero;
 
             while(true)
             {
@@ -332,7 +331,7 @@ namespace SLIDDES.UI
             float sine = Mathf.Sin(Time.time) * (IsHovering ? tiltScaleManual : tiltScaleAutomatic);
             float cosine = Mathf.Cos(Time.time) * (IsHovering ? tiltScaleManual : tiltScaleAutomatic);
 
-            Vector3 offset = targetGraphic.transform.position - pointerPosition;
+            Vector3 offset = pointerPosition == Vector3.zero ? Vector3.zero : targetGraphic.transform.position - pointerPosition;
             float tiltX = IsHovering ? ((offset.y * -1) * tiltAmountManual) : 0;
             float tiltY = IsHovering ? ((offset.x) * tiltAmountManual) : 0;
             float tiltZ = useTiltZRotation ? tiltZRotationInfluence * parentTransform.childCount * tiltZRotationCurve.Evaluate(monoBehaviour.transform.GetSiblingIndex() / ((float)parentTransform.childCount - 1)) : targetGraphic.transform.eulerAngles.z;
