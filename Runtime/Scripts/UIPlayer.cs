@@ -10,15 +10,13 @@ namespace SLIDDES.UI
 {
     [RequireComponent(typeof(EventSystem))]
     [RequireComponent(typeof(InputSystemUIInputModule))]
-    [AddComponentMenu("SLIDDES/UI/Navigation/UI Navigation System")]
-    public class UINavigationSystem : MonoBehaviour
+    [AddComponentMenu("SLIDDES/UI/UI Player")]
+    public class UIPlayer : MonoBehaviour
     {
         [Tooltip("Sync all event systems")]
         [SerializeField] private bool syncEventSystems = true;
 
-        //public UnityEvent<GameObject> onSelectedGameObjectChange;
-
-        [SerializeField] private MultiplayerEventSystem multiplayerEventSystem;
+        private MultiplayerEventSystem multiplayerEventSystem;
         private InputSystemUIInputModule inputSystemUIInputModule;
 
         private void Awake()
@@ -30,7 +28,7 @@ namespace SLIDDES.UI
         private void OnEnable()
         {
             inputSystemUIInputModule.move.action.performed += OnMove;
-            if(multiplayerEventSystem != null )
+            if(multiplayerEventSystem != null)
             {
                 GameObject g = EventSystem.current.currentSelectedGameObject != null ? EventSystem.current.currentSelectedGameObject : EventSystemHandler.SelectedGameObject;
                 multiplayerEventSystem.SetSelectedGameObject(g);
