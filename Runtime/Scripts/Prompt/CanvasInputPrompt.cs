@@ -41,33 +41,24 @@ namespace SLIDDES.UI
 
         private void OnEnable()
         {
-            if(InputManager.Instance != null)
-            {
-                InputManager.OnInputDeviceNameChanged += actionOnInputDeviceNameChanged;
-                InputManager.OnForceUpdateInputPrompts += actionOnForceUpdatePrompts;
-                InputManager.OnLastPlayerInputPressChanged += actionOnLastPlayerInputPressChanged;
-                UpdatePrompts();
-            }
+            InputManager.OnInputDeviceNameChanged += actionOnInputDeviceNameChanged;
+            InputManager.OnForceUpdateInputPrompts += actionOnForceUpdatePrompts;
+            InputManager.OnLastPlayerInputPressChanged += actionOnLastPlayerInputPressChanged;
+            UpdatePrompts();
         }
 
         private void OnDisable()
         {
-            if (InputManager.Instance != null)
-            {
-                InputManager.OnInputDeviceNameChanged -= actionOnInputDeviceNameChanged;
-                InputManager.OnForceUpdateInputPrompts -= actionOnForceUpdatePrompts;
-                InputManager.OnLastPlayerInputPressChanged -= actionOnLastPlayerInputPressChanged;                
-            }
+            InputManager.OnInputDeviceNameChanged -= actionOnInputDeviceNameChanged;
+            InputManager.OnForceUpdateInputPrompts -= actionOnForceUpdatePrompts;
+            InputManager.OnLastPlayerInputPressChanged -= actionOnLastPlayerInputPressChanged;
         }
 
         private void OnDestroy()
         {
-            if(InputManager.Instance != null)
-            {
-                InputManager.OnInputDeviceNameChanged -= actionOnInputDeviceNameChanged;
-                InputManager.OnForceUpdateInputPrompts -= actionOnForceUpdatePrompts;
-                InputManager.OnLastPlayerInputPressChanged -= actionOnLastPlayerInputPressChanged;
-            }
+            InputManager.OnInputDeviceNameChanged -= actionOnInputDeviceNameChanged;
+            InputManager.OnForceUpdateInputPrompts -= actionOnForceUpdatePrompts;
+            InputManager.OnLastPlayerInputPressChanged -= actionOnLastPlayerInputPressChanged;
         }
 
         // Start is called before the first frame update

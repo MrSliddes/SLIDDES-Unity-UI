@@ -80,7 +80,7 @@ namespace SLIDDES.UI
                     if(lastPlayerInputPress != null && lastPlayerInputPress.CurrentInputDevice != null) Instance.SetCurrentInputDevice(lastPlayerInputPress.CurrentInputDevice.ToString());
 
                     if(lastPlayerInputPress != null && Instance.hideCursorOnControllerInput)
-                    {                      
+                    {
                         Cursor.visible = CurrentInputDeviceName == InputDeviceNameKeyboard || CurrentInputDeviceName == InputDeviceNameMouse;
                     }
 
@@ -99,7 +99,7 @@ namespace SLIDDES.UI
         {
             get
             {
-                if (CurrentInputDeviceProfile == null)
+                if(CurrentInputDeviceProfile == null)
                 {
                     Debug.LogWarning($"{debugPrefix} CurrentSpriteAsset from CurrentInputDeviceProfile not found, returning default sprite asset");
                     return Instance.defaultSpriteAsset;
@@ -179,7 +179,14 @@ namespace SLIDDES.UI
 
         private void OnDisable()
         {
-            Application.quitting -= () => { ApplicationIsQuitting = true; };            
+            Application.quitting -= () => { ApplicationIsQuitting = true; };
+        }
+
+        private void OnDestroy()
+        {
+            Instance = null;
+            currentInputDeviceName = "";
+            lastPlayerInputPress = null;
         }
 
         private void Update()
@@ -473,7 +480,7 @@ namespace SLIDDES.UI
         {
             if(ApplicationIsQuitting) return;
 
-            for (int i = 0; i < players.Count; i++)
+            for(int i = 0; i < players.Count; i++)
             {
                 if(players[i] == null) continue;
                 if(players[i].InputActionAsset == null) continue;
@@ -544,8 +551,8 @@ namespace SLIDDES.UI
             {
                 // Assign the inputActionAsset to the player. The player will create its own unique clone of the asset
                 // Recommended that this is set to false
-                if(assignPlayerInputActionAsset) players[i].InputActionAsset = inputActionAsset; 
-                
+                if(assignPlayerInputActionAsset) players[i].InputActionAsset = inputActionAsset;
+
                 // Assign any rebinds
                 if(showDebug) Debug.Log($"{debugPrefix} Loading rebinds inputactionasset for player {players[i].Index}...");
                 string rebinds = PlayerPrefs.GetString(GetPlayerPrefsKeyRebinds(players[i].Index));
@@ -638,7 +645,7 @@ namespace SLIDDES.UI
         public void ResetCurrentPlayerInputActionAssetRebinds()
         {
             if(LastPlayerInputPress == null) return;
-            
+
             LastPlayerInputPress.InputActionAsset.RemoveAllBindingOverrides();
 
             SavePlayersInputActionAssetRebinds();
@@ -660,9 +667,9 @@ namespace SLIDDES.UI
                 if(player.Index == -1) continue;
 
                 CheckPlayerInputHasChanged(player);
-                
+
                 if(player.PressedInputThisFrame)
-                {   
+                {
 
                     lastPlayerInputPress = player;
                 }
@@ -746,7 +753,7 @@ namespace SLIDDES.UI
                 this.inputDeviceNames = inputDeviceNames;
             }
         }
-                
+
         public class Player
         {
             public bool PressedInputThisFrame { get; set; }
@@ -756,16 +763,16 @@ namespace SLIDDES.UI
                 get { return timeSinceLastSwitch; }
                 set
                 {
-                    timeSinceLastSwitch = Mathf.Clamp(value, 0, 10);                    
+                    timeSinceLastSwitch = Mathf.Clamp(value, 0, 10);
                 }
             }
             public InputDevice CurrentInputDevice { get; set; }
-            public InputActionAsset InputActionAsset 
+            public InputActionAsset InputActionAsset
             {
-                get 
+                get
                 {
                     if(PlayerInput == null) return null;
-                    return PlayerInput.actions; 
+                    return PlayerInput.actions;
                 }
                 set { PlayerInput.actions = value; }
             }
